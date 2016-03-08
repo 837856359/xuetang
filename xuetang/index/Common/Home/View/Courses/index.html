@@ -1,0 +1,280 @@
+<include file="Public/html/header.html" />
+
+<article>
+	<div class="wrap">
+		<div class="search_wrap">
+			<section class="search_web cf" id="search">
+				<div class="left fl">
+					<div class="search">
+						<input class="text" type="text" value="" autocomplete="off" placeholder="查找课程名称、课程代码、关键词..."/>
+						<span>全部课程</span>
+						<i></i>
+					</div>
+					<div class="search_re_wrap"><a class="search_re" href="javascript:" title=""></a></div>
+				</div>
+				<div class="right fr">
+					<span></span><label for="zj">课  程  列  表  展  示</label>
+				</div>
+				<section class="win">
+					<div class="win_in">
+						<h2>学科分类</h2>
+						<div class="czly">             
+                            <!--<a href="#" title="" data-id="0">全部学科 </a>-->  
+							<a class="cloud" href="__APP__/index.php/Home/Courses/index" title="" data-id="2">全部学科</a>
+                            <?php foreach($xk as $val){  ?>
+
+								<a class="cloud" href="__APP__/index.php/Home/Courses/kexueSearch/m_id/{$val.m_id}" title=""  id="xk_name" onclick="xueke(<?php echo $val['m_id'] ?>);" data-id="2"><?php echo  $val["m_name"] ?> </a>
+                            <?php  }  ?>
+						</div>
+						<h2>垂直领域</h2>
+						<div class="czly">
+
+                            <?php  foreach($xy as $value){ ?>
+
+                            <a class="data" href="__APP__/index.php/Home/Courses/chuizhi_search/c_id/{$value.c_id}" title="" data-id="2">{$value.c_name} ( {$value.num}门课 )</a>
+							<?php  }  ?>
+
+						</div>
+					</div>
+				</section>
+			</section>
+		</div>
+		<section>
+<if condition="$view eq 'index'">
+<!-- 替换页面-->
+<table id="qwe">
+<ul class="list_style" id="list_style">
+				<foreach name="course" item="test">
+				<li class="cf image_scale"> 
+					<div class="img fl"> 
+						<div class="cover">  
+							<a href="__APP__/index.php/Home/Detail/detail_list/cid/{$test.cid}" title="点击查看" target="_blank">点击查看
+							</a>
+						</div> 
+						<img src="{$test.cimg}" alt="" title="{$test.name}"> 
+					</div> <div class="fl center"> 
+					<p class="name">{$test.c_name}&nbsp;&nbsp;{$test.job}&nbsp;&nbsp;{$test.name}
+					</p> 
+					<h3>
+						<a href="__APP__/index.php/Home/Detail/detail_list/cid/{$test.cid}" title="{$test.cname}" target="_blank">{$test.cname}
+						</a>
+					</h3> 
+					<p class="txt">{$test.intro} </p> 
+				</div>
+				<div class="right fl">
+					<p class="orange">
+						<php>
+							if(!empty($test['num'])){
+							    echo "连载至第".$test['num']."讲";
+							}else{
+							    echo "未开课";
+							}
+						</php>
+					</p> 
+					<p class="updata">更新于
+						<php>
+							$time_now = time();
+							$add_time = strtotime($test['addtime']);
+							$time = floor(($time_now-$add_time)/3600);
+							echo $time;
+						</php>
+					小时前</p>
+					<p><a>助教在线</a></p>
+				</div> 
+				</li>
+				</foreach>
+			</ul>
+</table>
+<!-- 替换页面-->
+</if>
+<if condition="$view eq 'sel'">
+<if condition="$type eq '1'">
+<!-- 替换页面-->
+<table id="qwe">
+<ul class="list_style" id="list_style">
+				<foreach name="course" item="test">
+				<li class="cf image_scale"> 
+					<div class="img fl"> 
+						<div class="cover">  
+							<a href="__APP__/index.php/Home/Detail/detail_list/cid/{$test.course_id}" title="点击查看" target="_blank">点击查看
+							</a>
+						</div> 
+						<img src="{$test.cimg}" alt="" title="{$test.name}"> 
+					</div> <div class="fl center"> 
+					<p class="name">{$test.c_name}&nbsp;&nbsp;{$test.job}&nbsp;&nbsp;{$test.name}
+					</p> 
+					<h3>
+						<a href="__APP__/index.php/Home/Detail/detail_list/cid/{$test.course_id}" title="{$test.cname}" target="_blank">{$test.cname}
+						</a>
+					</h3> 
+					<p class="txt">{$test.intro} </p> 
+				</div>
+				<div class="right fl">
+					<p class="orange">
+						<php>
+							if(!empty($test['num'])){
+							    echo "连载至第".$test['num']."讲";
+							}else{
+							    echo "未开课";
+							}
+						</php>
+					</p> 
+					<p class="updata">更新于
+						<php>
+							$time_now = time();
+							$add_time = $test['cc_addtime'];
+							$time = floor(($time_now-$add_time)/3600);
+							echo $time;
+						</php>
+					小时前</p>
+					<p><a>助教在线</a></p>
+				</div> 
+				</li>
+				</foreach>
+			</ul>
+</table>
+<!-- 替换页面-->
+</if>
+
+<if condition="$type eq '2'">
+<!-- 替换页面-->
+<table id="qwe">
+<ul class="list_style" id="list_style">
+				<li class="cf image_scale"> 
+					<div class="img fl"> 
+						<div class="cover">  
+							<a href="__APP__/index.php/Home/Detail/detail_list/cid/{$course.course_id}" title="点击查看" target="_blank">点击查看
+							</a>
+						</div> 
+						<img src="{$course.cimg}" alt="" title="{$course.name}"> 
+					</div> <div class="fl center"> 
+					<p class="name">{$course.c_name}&nbsp;&nbsp;{$course.job}&nbsp;&nbsp;{$course.name}
+					</p> 
+					<h3>
+						<a href="__APP__/index.php/Home/Detail/detail_list/cid/{$course.course_id}" title="{$test.cname}" target="_blank">{$course.cname}
+						</a>
+					</h3> 
+					<p class="txt">{$course.intro} </p> 
+				</div>
+				<div class="right fl">
+					<p class="orange">
+						<php>
+							if(!empty($test['num'])){
+							    echo "连载至第".$test['num']."讲";
+							}else{
+							    echo "未开课";
+							}
+						</php>
+					</p> 
+					<p class="updata">更新于
+						<php>
+							$time_now = time();
+							$add_time = $test['cc_addtime'];
+							$time = floor(($time_now-$add_time)/3600);
+							echo $time;
+						</php>
+					小时前</p>
+					<p><a>助教在线</a></p>
+				</div> 
+				</li>
+			</ul>
+</table>
+<!-- 替换页面-->
+</if>
+<if condition="$type eq '3'">
+<!-- 替换页面-->
+<table id="qwe">
+<ul class="list_style" id="list_style">
+				<foreach name="course" item="test">
+				<li class="cf image_scale"> 
+					<div class="img fl"> 
+						<div class="cover">  
+							<a href="__APP__/index.php/Home/Detail/detail_list/cid/{$test.course_id}" title="点击查看" target="_blank">点击查看
+							</a>
+						</div> 
+						<img src="{$test.cimg}" alt="" title="{$test.name}"> 
+					</div> <div class="fl center"> 
+					<p class="name">{$test.c_name}&nbsp;&nbsp;{$test.job}&nbsp;&nbsp;{$test.name}
+					</p> 
+					<h3>
+						<a href="__APP__/index.php/Home/Detail/detail_list/cid/{$test.course_id}" title="{$test.cname}" target="_blank">{$test.cname}
+						</a>
+					</h3> 
+					<p class="txt">{$test.intro} </p> 
+				</div>
+				<div class="right fl">
+					<p class="orange">
+						<php>
+							if(!empty($test['num'])){
+							    echo "连载至第".$test['num']."讲";
+							}else{
+							    echo "未开课";
+							}
+						</php>
+					</p> 
+					<p class="updata">更新于
+						<php>
+							$time_now = time();
+							$add_time = $test['cc_addtime'];
+							$time = floor(($time_now-$add_time)/3600);
+							echo $time;
+						</php>
+					小时前</p>
+					<p><a>助教在线</a></p>
+				</div> 
+				</li>
+				</foreach>
+			</ul>
+</table>
+<!-- 替换页面-->
+</if>
+</if>
+			<center><font size=5px>{$page}</font></center>
+			<div class="show_more" id="show_more">
+				<a class="btn1" href="javascript:" title="显示更多课程">显示更多课程（<span>452</span>）...</a>
+				<a class="btn2" href="javascript:" title="显示下一门课程" style="display:none;" ></a>
+			</div>
+			<div class="no_data" id="no_data">
+				<h3>暂无相关课程</h3>
+				<p><a id="find_other" href="javascript:" title="找找其他课程" >找找其他课程</a></p>
+			</div>
+		</section>
+	</div>
+</article>
+
+<div class="hide" id="js_xy_course_search"></div>
+
+<include file="Public/html/footer.html" />
+
+</body>
+</html>
+	
+		
+<script src="__PUBLIC__/js/jq.js"></script>
+<script>
+
+  //搜索学科
+  function xueke(m_id){    //学科ID
+
+	
+      $.ajax({
+          url:"{:U('Courses/kexueSearch')}",
+          data:{"xk_name":xk_name},
+          type:'get',
+          success:function(e){
+             // $("#th").html(e);
+			 if(e == 1){
+				 //alert(1)
+			    $("#qwe").html(e);
+			 }
+			 if(e == 2){
+			    alert("暂无数据!!!");
+			 }
+
+          }
+      })
+
+
+
+  }
+</script>

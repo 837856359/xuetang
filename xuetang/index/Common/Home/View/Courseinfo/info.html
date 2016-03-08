@@ -1,0 +1,69 @@
+<include file="Public/joined_header"/>
+<section class="container">
+  <div class="info-wrapper">
+    <section class="updates">
+
+      <h1>课程更新与新闻</h1>
+      
+	  <foreach name="chapter_name" item="vo">
+	  <section>
+		<article><pre>
+			<b>{$vo.ch_name}</b>
+			{$vo.notice}
+			</pre>
+			<h2>{$vo.addtime}</h2>
+			</article>
+			</section>
+			</foreach>
+			{$page}
+			</section>
+
+    
+	
+	
+	
+	
+	
+	<section aria-label="讲义导航" class="handouts">
+      <h1>课程讲义</h1>
+      <p><b>提纲</b></p>
+	  <foreach name="chapter_other" item="vo">
+		<ol><pre><a href="__APP__/index.php/Home/Courseinfo/info_down?type=1&file_name={$vo.outline_url}" onclick=" return confirm('这将会下载此文件，确定吗？')">【提纲】{$vo.outline_url}</a></pre></ol>
+	  </foreach>
+
+
+
+
+
+
+	<p><b>课件</b></p>
+		<foreach name="chapter_other" item="vo">
+		<ol><pre><a href="__APP__/index.php/Home/Courseinfo/info_down?type=2&file_name={$vo.ware_url}" onclick=" return confirm('这将会下载此文件，确定吗？')">【课件】{$vo.ware_url}</a></pre></ol>
+	</foreach>
+
+
+
+
+	<p><b>课程代码</b></p>
+		<foreach name="chapter_other" item="vo">
+		<ol><pre><a href="__APP__/index.php/Home/Courseinfo/info_down?type=3&file_name={$vo.code_url}" onclick=" return confirm('这将会下载此文件，确定吗？')">【课程代码】{$vo.code_url}</a></pre></ol>
+	</foreach>
+
+
+
+
+
+    </section>
+	</div>
+	</section>
+
+      
+    </div>
+<include file="Public/joined_footer"/>
+    
+      
+  
+      
+
+
+

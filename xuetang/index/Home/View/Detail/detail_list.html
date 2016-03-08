@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<title>{$data.cname}</title>
+<meta name="keywords" content="学堂在线, MOOC，慕课，XuetangX, 清华大学，北京大学, 在线教育, 大规模开放式在线课程, 在线学习,"/>
+<meta name="description" content="{$data.cname}" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/reset.2d73afda293e.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/index.750c3a8f060d.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/media.14fe4c3798ee.css">
+</head>
+<body class="course_detail lang_zh-cn">
+<include file="Public/html/header.html" />
+<div class="course_title">
+    <section class="video wrap cf">
+            <div class="left fl">
+                <php>  if($course['video']!=''){</php>
+                <video width="500" controls>
+                <!-- Firefox -->
+                <source src="{$course.video}" type="video/ogg" />
+                 <!-- Safari/Chrome-->
+                  <source src="{$course.video}" type="video/mp4" />
+                 <!-- 如果浏览器不支持video标签，则使用flash -->
+                 <embed src="http://blip.tv/play/gcMVgcmBAgA%2Em4v" type="application/x-shockwave-flash"  width="1024" height="798" allowscriptaccess="always" allowfullscreen="true"> </embed>
+                </video>
+                   <php> }else{</php>  
+                   
+                   <img src="<php> if($course['cimg']==''){ echo '/xuetang/Public/img/images_course_image_010.jpg'; }else{ echo $course['cimg']; } </php>">
+                     <php> }</php>  
+            </div>
+            <div class="right fl">
+                <h2 id="title1">{$course.cname}</h2>
+                <p>简介：{$course.intro}</p>
+                <hr size="1" color="#f0f0f0" align="left">
+                <div class="cf teacher">
+                        <div class="fl">
+                                <img src="<php> if($data['t_img']==''){ echo '/xuetang/Public/img/teacher/1451347315133.jpg'; }else{ echo $data[t_img]; } </php>">
+                        </div>
+                        <div class="fl name">
+                                <h3>{$course.name}</h3>
+                                <p>{$course.job}</p>
+                        </div>
+                </div>
+                <div class="cf conRight">
+                    <div class="fr cf hide" id="conRight_id">
+                        <ol class="fl" id="teacher_nav">
+                                        <li></li>
+                                        <li></li>
+                        </ol>
+                        <span class="fl preBtnCircle" id="preBtnCircle">‹</span>
+                        <span class="fl nextBtnCircle" id="nextBtnCircle">›</span>
+                    </div>
+                </div>
+            </div>
+	</section>
+	<section class="wrap apply apply_loading" id="course_data" data-url="/courses/MITx/6_00_1x/2014_T2/about_ajax" data-parameter=" " data-enrollment_start="2015-01-13 16:00:00+00:00" data-enrollment_end="2015-04-22 16:00:00+00:00" data-start="2015-01-25 16:00:00+00:00" data-end="2015-04-22 16:30:00+00:00" data-owner="xuetangX" data-course_id="MITx/6_00_1x/2014_T2" data-serialized="0" data-original_url="" data-enrollment_history_data="[&quot;16\u65e5&quot;, &quot;17\u65e5&quot;, &quot;18\u65e5&quot;, &quot;19\u65e5&quot;, &quot;20\u65e5&quot;, &quot;21\u65e5&quot;, &quot;22\u65e5&quot;, &quot;23\u65e5&quot;, &quot;24\u65e5&quot;, &quot;25\u65e5&quot;]" data-enrollment_history="[12874, 12875, 12875, 12875, 12875, 12875, 12875, 12875, 12875, 12875]" data-enrollment="12875" data-change_enrollment="/change_enrollment" data-ishonorcourse="true" data-iscertificate="false" data-verified_enrollment="/verified_enrollment">
+    <h2>每日报名走势</h2>
+    <div class="cf">
+        <div style="float:right">
+        <div class="fl count" >
+                <p class="title">已报名人数</p>
+                <p class="num">{$data.ucount}</p>
+        </div>
+        <div class="fl apply_btn">
+                <p>
+                    <if condition="$data['tag'] eq '1'">
+                    <a class="btn_1" id="join_free" data-type="join" href="__APP__/index.php/Home/Studyadout/syllabus" title="进入课程">进入课程</a>
+                    <else /> 
+                    <a class="btn_1" id="join_free" data-type="join" href="__APP__/index.php/Home/Detail/detail_join" title="加入课程">加入课程</a>
+                    </if>
+                </p>
+        </div>
+        </div>
+        <div data-highcharts-chart="0" class="fl chart" id="chart">
+<div style="position: relative; overflow: hidden; width: 500px; height: 180px; text-align: left; line-height: normal; z-index: 0; left: 0.5px; top: 0px;float:left;" id="highcharts-0" class="highcharts-container">
+    <style type="text/css">
+    html,body,h1,h2,h3,h4,h5,h6 {
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 0px auto;
+        margin-bottom: 80px;
+    }
+    .chart-wrapper {
+        background: #fff;
+        padding: 15px;
+        max-width: 600px;
+        margin: 0px auto 0px auto;
+        box-sizing: border-box;
+        overflow: auto;
+        /*在手机，支持图表区域的滚动  -webkit-overflow-scrolling: touch*/
+        overflow-scrolling: touch;
+        -webkit-overflow-scrolling: touch;
+    }
+    h2 {
+        margin: 20px 0px;
+    }
+    .chart-wrapper canvas {
+        min-width: 70%;
+        height: 150px;
+    }
+    .chart-title,
+    .chart-wrapper + small {
+        margin-left: 15px;
+    }
+    </style>
+    <script src="__PUBLIC__/js/Chart.js-master/Chart.js?"></script>
+    <!--[if lte IE 8]>
+    <script src="ie/excanvas.js"></script>
+    <script>
+    Chart.defaults.global.animation = false;
+    //这里主要是为<=IE8做降级处理，因为动画在IE8效果很差
+    </script>
+    <![endif]-->									
+    <div class="container" style="float:left">
+        <div class="chart-wrapper" >
+            <canvas id="sales-volume-chart"></canvas>
+        </div>
+        <small>单位：万辆</small>						
+</div>
+<script>
+    function lineChart() {
+        var ctx = document.getElementById('sales-volume-chart').getContext("2d")
+        var data = {
+            labels: [{$date_time_str}],
+            datasets: [{
+                label: "",
+                fillColor: "rgba(220,220,220,0.2)",
+                strokeColor: "rgba(0,102,51,1)",
+                pointColor: "rgba(220,220,220,1)",
+                pointStrokeColor: "#339933",
+                pointHighlightFill: "#339933",
+                pointHighlightStroke: "rgba(220,220,220,1)",
+                data: [{$num_str}]
+            }]
+        };
+        // var salesVolumeChart = new Chart(ctx).Line(data);
+        var salesVolumeChart = new Chart(ctx).Line(data, {
+            // 小提示的圆角
+            // tooltipCornerRadius: 0,
+            // 折线的曲线过渡，0是直线，默认0.4是曲线
+            bezierCurveTension: 0,
+            // bezierCurveTension: 0.4,
+            // 关闭曲线功能
+            bezierCurve: false,
+            // 背景表格显示
+            // scaleShowGridLines : false,
+            // 点击的小提示
+            tooltipTemplate: "<%if (label){%><%=label%> 报名人数：<%}%><%= value %>人",
+            //自定义背景小方格、y轴每个格子的单位、起始坐标
+            scaleOverride: true,
+            scaleSteps: 10,
+            // scaleStepWidth: Math.ceil(Math.max.apply(null,data.datasets[0].data) / 0.1),
+            scaleStepWidth: 10,
+            scaleStartValue: 0
+
+        });
+    }
+
+
+    function barChart() {
+        var ctx = document.getElementById('sales-volume-bar-chart').getContext("2d")
+        var data = {
+            labels: ["2014-10", "2014-11", "2014-12", "2015-1", "2015-2", "2015-3"],
+            datasets: [{
+                label: "",
+                fillColor: "rgba(153,204,153,0.5)",
+                strokeColor: "rgba(0,102,51,1)",
+                pointColor: "rgba(220,220,220,1)",
+                pointStrokeColor: "#338033",
+                pointHighlightFill: "#338033",
+                pointHighlightStroke: "rgba(220,220,220,1)",
+                data: [1.27, 1.30, 1.30, 1.41, 1.04, 1.29]
+            }]
+        };
+        var salesVolumeChart = new Chart(ctx).Bar(data, {
+            // 点击的小提示
+            tooltipTemplate: "<%if (label){%><%=label%> 销量：<%}%><%= value %>万辆"
+        });
+    }
+
+    // 启动
+    setTimeout(function() {
+        // 避免IE7-8 调用getContext报错，使用setTimeout
+        lineChart()
+        barChart()
+    }, 0)
+    // 在手机测试，canvas中的动画看起来很卡，性能很差
+    // PC上还不错
+    if (/Mobile/i.test(navigator.userAgent)) {
+        //针对手机，性能做一些降级，看起来就不会那么卡了
+        Chart.defaults.global.animationSteps = Chart.defaults.global.animationSteps / 6
+        Chart.defaults.global.animationEasing = "linear"
+    }
+    </script>   
+    </div>
+</section>
+</div>
+<article class="wrap cf">
+    <div class="left fl">
+        <section>
+                <h2>课程简介</h2>
+                <p>{$data.intro}</p>
+        </section>
+        <section id="course_list">
+            <h2>课程单元</h2>
+            <div class="content" style="max-height:600px;">
+                <foreach name='unit' item='k'>
+                <if condition="$data['tag'] eq 1 ">
+<a class="btn_1" data-type="join" href="__APP__/index.php/Home/Courseware/ware"title="{$k.ch_name}">{$k.ch_name} </a><br /><br />
+                <else />
+<a class="btn_1" id="join_free" data-type="join" href="__APP__/index.php/Home/Detail/detail_join" title="{$k.ch_name}">{$k.ch_name}</a><br />
+                </if>
+                </foreach>
+            </div>
+        </section>
+    </div>
+    <div class="right fl">
+            <section class="kcxx">
+                    <div class="time">
+                            <p>
+                                <span>8</span>周课时
+                                <span>5</span>小时/周
+                            </p>
+                            <p></p>
+                    </div>
+                    <h2>知识储备</h2>
+                    <p></p>
+            </section>
+            <h3>授课老师</h3>
+            <ul id="list">
+                <li>
+                    <div class="tc cf">
+                            <img class="fl"  src="<php> if($data['t_img']==''){ echo '/xuetang/Public/img/teacher/1451347315133.jpg'; }else{ echo $data[t_img]; } </php>">
+                            <div class="fl">
+                                    <h4>{$data.name}</h4>
+                                    <p>{$data.job}</p>
+                            </div>
+                    </div>
+                </li>
+            </ul>
+    </div>
+    </article>
+    <div class="bootr wrap">
+        <section class="new-courses-ref" id="new-courses-ref">
+        <div class="h2">相关课程</div>
+        <div class="scroll_courses_wrap_ref">
+            <div class="scroll_courses_ref cf">
+                <ul class="cf">
+                    <div class="container-fulid">
+                        <div class="row" id="courseref_content">
+<foreach name='about' item='course'>
+	<li class="col-md-8 col-sm-12">
+        <div class="bootr_ref">
+			            
+            <style>.normal1{position:absolute;top:0;left:0;}
+                .normal1 img{width:260px;height:182px}
+                .normal1 h3{height:50px;line-height:50px;font-size:14px;color:#555;font-weight:bold;text-overflow:ellipsis;white-space:nowrap;width:260px}</style>
+            <a href="__APP__/index.php/Home/Detail/detail_list/cid/{$course.cid}" title="{$course.cname}" target="_blank">
+            <div class="normal1">
+                <img  src="<?php if($course['cimg']==''){  echo "/xuetang/Public/img/images_course_image_010.jpg";}else{ echo $course['cimg']; }?>" alt="" title="">
+				
+                <div class="ct">{$course.cname}</div>
+                <div class="ct_p"><span>{$course.people} 听课</span></div>
+            </div>
+            <div class="staff">
+                <div class="cf">
+                    <img class="fl" src="<php> if($course['t_img']==''){ echo '/xuetang/Public/img/teacher/1451347315133.jpg'; }else{ echo $course[t_img]; } </php>" alt="{$course.name}" title="{$course.name}">
+                    <div class="js_content fl">
+                        <h4>{$course.name}</h4>
+                        <div>{$course.job} </div>
+                    </div>
+                </div>
+                <div class="txt">课程简介：{$course.intro}</div>
+                <div class="title"><span>{$course.cname}</span></div>	
+            </div>	
+            </a>
+        </div>
+    </li>
+</foreach>  
+	</div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    </section>
+</div>
+ <include file="Public/html/footer.html" />
+</body>
+</html>

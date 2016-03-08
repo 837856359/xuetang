@@ -1,0 +1,1 @@
+<video src="video/<?php echo $src; ?>" autoplay width="100%" height="100%"></video>

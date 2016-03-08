@@ -1,0 +1,305 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"add",
+				"add_time"
+			],
+			[
+				"per",
+				"Person_model"
+			],
+			[
+				"print",
+				"print_r"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 252,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/acer/Desktop/ProblemsController.php",
+			"settings":
+			{
+				"buffer_size": 30440,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 608.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/F/xuetang/admin/mooc_admin/backend/modules/user/models/User.php",
+		"/F/xuetang/admin/mooc_admin/backend/modules/user/controllers/DefaultController.php",
+		"/F/xuetang/admin/mooc_admin/backend/modules/user/views/user/adddagang.php",
+		"/F/xuetang/index.php",
+		"/F/xuetang/admin/mooc_admin/backend/modules/user/views/user/index_list.php",
+		"/F/xuetang/admin/mooc_admin/backend/modules/user/views/user/header.php",
+		"/F/xuetang/admin/mooc_admin/backend/modules/user/views/user/upfile.php",
+		"/F/xuetang/admin/mooc_admin/common/models/Spreadsheet_Excel_Reader.php",
+		"/F/xuetang/admin/mooc_admin/backend/modules/user/views/user/footer.php",
+		"/G/zhaopin/ci/application/views/User/resume_basic.php",
+		"/G/zhaopin/ci/application/views/User/personal_resume_make.php",
+		"/G/zhaopin/ci/application/controllers/User/Person_index.php",
+		"/G/zhaopin/ci/application/models/User/Person_model.php",
+		"/G/zhaopin/ci/application/views/User/resume_list.php",
+		"/G/zhaopin/ci/application/views/User/index.php",
+		"/C/Program Files (x86)/Sublime Text 3/Data/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"class",
+			"#",
+			"js",
+			"<link rel=\"stylesheet\" type=\"text/css\" href=\"/static/css/uploadify.css\">",
+			"video_upload",
+			"<object id=\"SWFUpload_0\" class=\"swfupload\" width=\"120\" height=\"30\" data=\"/static/images/uploadify.swf?preventswfcaching=1441942347722\" type=\"application/x-shockwave-flash\" style=\"position: absolute; z-index: 1;\">",
+			"video_upload",
+			"创建",
+			"退出",
+			"简历",
+			"src",
+			"href",
+			"/qishi/templates/default/js/",
+			"基本",
+			"addresume2",
+			"titleH2",
+			"教育",
+			"教学",
+			"src",
+			"/qishi/templates/default/",
+			"/qishi/templates/default/css/",
+			"look_",
+			"#current_cn",
+			"current_cn",
+			"sex_cn",
+			"退出",
+			"src",
+			"退出",
+			"education",
+			"id='education'",
+			"education_menu",
+			"majorText",
+			"退出"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"/ci/application/Public/js/",
+			"/ci/application/Public/",
+			"/ci/application/Public/css/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 252,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								198,
+								249
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/acer/Desktop/ProblemsController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 30440,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 483.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 295.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

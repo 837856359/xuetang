@@ -1,0 +1,119 @@
+<header id="header_bootstrap" class="ng-scope">
+	<div id="py_header_data" class="hide" data-ajax="/header_ajax" data-blurajax="/check_register_params" data-loginsubmit="/v2/login_ajax" data-emailregistersubmit="/v2/create_account" data-phoneregistersubmit="/create_account_with_phone" data-phonecode="/phone/validate" data-code=""></div>
+	<div ng-controller="headerAjaxCtrl" class="ng-scope">
+		<div class="header_top">
+			<div class="header_up">
+				<div class="header_up_inner cf">
+					<div class="header_up_left fl cf">
+						<nav class="fl">
+							<ul class="cf">
+								<li><a href="http://www.bwie.com/" title="北京八维官网" target="_blank">北京八维官网</a></li>
+								<li><a title="#" href="http://172.27.0.200/ceping/index/web/" target="_blank">测评平台</a></li>
+								<li><a href="http://172.27.0.200/exam/" title="考试平台" target="_blank">考试平台</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="header_up_right fr">
+						<div class="app_download cf fl" id="app_download">
+							<ol class="ol cf">
+								<li class="li_ios fl">
+									<div class="li_inner_ios">
+										<div class="app_alert_ios">
+											<div class="ios_download"><a class="fl" href="#>前往下载页面</a></div>
+											<div class="ios_ewm_hd"><img src="__PUBLIC__/js/ios_ewm.1e84ea1a056f.png"></div>
+										</div>
+									</div>
+								</li>
+								<li class="li_android fl">
+									<div class="li_inner_android">
+										<div class="app_alert_android">
+											<div class="android_download"><a class="fl" href="#">前往下载页面</a></div>
+											<div class="an_ewm_hd"><img src="__PUBLIC__/js/an_ewm.4aa88ce8cf00.png"></div>
+										</div>
+									</div>
+								</li>
+							</ol>
+						</div>
+						<nav class="fr">
+							<ul class="cf">
+                                <li><a href="#" title="招募老师">招募老师</a></li>
+                                <li><a href="#" title="关于我们">关于我们</a><a> | </a><a href="#" title="About Us">About Us</a></li>
+								<li><a href="#" title="意见反馈">意见反馈</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+			<div class="header wrap cf">
+				<div class="left fl cf">
+					<h1 class="fl"><a href="http://172.27.0.200/xuetang/index.php" title="八维学堂"><img src="__PUBLIC__/js/logo.33eba6677473.png" alt="logo" title="八维学堂"></a></h1>
+					<nav class="fl">
+						<ul class="cf">
+							<li
+								class=""   
+							><a href="   __APP__/index.php/Home/Courses/index" title="课程">课程</a></li>
+							<li             
+							><a href="__APP__/index.php/Home/Courses/partners" title="院校">院校</a></li>
+							<li
+                            ><a href="#" title="学堂云">资料库</a></li>
+                           <li                   
+							><a href="__APP__/index.php/Home/Community/index" title="广场">讨论区</a></li>
+                            
+						</ul>
+					</nav>
+				</div>
+                                <?php
+                                $a =$_SESSION['uid'];
+                                    if($a!=""){ 
+                                     ?>
+									 <div class="right fr">					
+						   <ul class="cf pre_login ng-scope" ng-if="!loginAbout.login">
+						   <li class="header_register fr"><a ng-click="goToRegister()" href="__APP__/index.php/Home/Index/loginout" title="退出">退 出</a></li>
+							<li class="header_login_container fr cf">
+								<div class="header_vendor fl">
+								<a  ng-click="loginThird(&#39;/login/weibo/&#39;)" href="{$code_url}"><img src="__PUBLIC__/img/xl.png" ></a>
+								<!-- <a href="" title="新浪微博">新浪微博</a> -->	
+								</div>
+								<div class="header_vendor fl"><a ng-click="loginThird(&#39;/login/qq/&#39;)" href="#" title="QQ"><img src="__PUBLIC__/img/qq.png" ></a></div>
+								<div class="header_vendor fl"><a ng-click="loginThird(&#39;/login/weixin/&#39;)" href="#" title="微信"><img src="__PUBLIC__/img/wx.png" ></a></div>
+ <div class="header_login fl"><a ng-click="goToLogin()" href="#" title="">欢迎{$Think.session.username}登陆</a></div>
+                                 <?php
+                                   }
+                                  else{ 
+                                     ?>
+									 <div class="right fr">					
+						   <ul class="cf pre_login ng-scope" ng-if="!loginAbout.login">
+							<li class="header_register fr"><a ng-click="goToRegister()" href="__APP__/index.php/Home/Index/register" title="注册">注 册</a></li>
+							<li class="header_login_container fr cf">
+								<div class="header_vendor fl">
+								<a  ng-click="loginThird(&#39;/login/weibo/&#39;)" href="{$code_url}"><img src="__PUBLIC__/img/xl.png" ></a>
+								<!-- <a href="" title="新浪微博">新浪微博</a> -->	
+								</div>
+								<div class="header_vendor fl"><a ng-click="loginThird(&#39;/login/qq/&#39;)" href="#" title="QQ"><img src="__PUBLIC__/img/qq.png" ></a></div>
+								<div class="header_vendor fl"><a ng-click="loginThird(&#39;/login/weixin/&#39;)" href="#" title="微信"><img src="__PUBLIC__/img/wx.png" ></a></div>
+                                <div class="header_login fl" ><a ng-click="goToLogin()" href="__APP__/index.php/Home/Index/login" title="登录"><img src="__PUBLIC__/img/dl.png" ></a></div>
+                                 <?php
+                                 }
+                                 ?> 
+								
+
+							</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="mobile_header">
+			<a href="172.27.0.200/xuetang"><img class="logo fl" src="__PUBLIC__/js/logo.33eba6677473.png" alt="logo" title="八维学堂"></a>
+			<ul class="cf fr">
+				<li><a href="#" title="" target="_blank"><img src="__PUBLIC__/js/1.a0d94a6f45ad.png" alt="" title=""></a></li>
+				<li><a href="#" title="课程"><img src="__PUBLIC__/js/2.1948c266bf3f.png" alt="课程" title="课程"></a></li>
+				<li><a href="#" title="院校"><img src="__PUBLIC__/js/3.e32a463a04a5.png" alt="院校" title="院校"></a></li>
+				<li><a href="#" title="广场"><img src="__PUBLIC__/js/4.12a66edecc8c.png" alt="广场" title="广场"></a></li>
+                                <li><a ng-click="goToLogin()" href="__APP__/Index/login" title="登录"><img src="__PUBLIC__/js/5.7fdc93241166.png" alt="登录" title="登录"></a></li>
+			</ul>
+		</div>
+	</div>
+</header>

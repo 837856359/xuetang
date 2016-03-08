@@ -1,0 +1,137 @@
+<header id="header_bootstrap">
+<div ng-controller="headerAjaxCtrl">
+        <div class="header_top">
+                <div class="header_up">
+                        <div class="header_up_inner cf">
+                                <div class="header_up_left fl cf">
+                                        <nav class="fl">
+                                                <ul class="cf">
+                                                        <li><a href="http://www.bwie.net/" title="北京八维官网" target="_blank">北京八维官网</a></li>
+                                                        <li><a title="测评平台" href="http://172.27.0.200/ceping/index/web/" target="_blank">测评平台</a></li>
+                                                        <li><a href="http://172.27.0.200/exam/" title="考试平台" target="_blank">考试平台</a></li>
+                                                </ul>
+                                        </nav>
+                                </div>
+
+                                <div class="header_up_right fr">
+                                        <div class="app_download cf fl" id="app_download">
+                                                <ol class="ol cf">
+                                                        <li class="li_ios fl">
+                                                                <div class="li_inner_ios">
+                                                                        <div class="app_alert_ios">
+                                                                                <div class="ios_download"><a class="fl" href="/download/ios">前往下载页面</a></div>
+                                                                                <div class="ios_ewm_hd"><img src="__PUBLIC__/img/ios_ewm.png" ></div>
+                                                                        </div>
+                                                                </div>
+                                                        </li>
+                                                        <li class="li_android fl">
+                                                                <div class="li_inner_android">
+                                                                        <div class="app_alert_android">
+                                                                                <div class="android_download"><a class="fl" href="/download/android">前往下载页面</a></div>
+                                                                                <div class="an_ewm_hd"><img src="__PUBLIC__/img/an_ewm.png" ></div>
+                                                                        </div>
+                                                                </div>
+                                                        </li>
+                                                </ol>
+                                        </div>
+                            <nav class="fr">
+                            <ul class="cf">
+                                <li><a href="#" title="关于我们">关于我们</a><a> | </a><a href="#" title="About Us">About Us</a></li>
+								<li><a href="/about#contact" title="意见反馈">意见反馈</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+                    <div class="header wrap cf">
+                            <div class="left fl cf">
+                                    <h1 class="fl"><a href="http://172.27.0.200/xuetang/index.php" title="学堂在线"><img src="__PUBLIC__/img/logo.33eba6677473.png" alt="logo" title="学堂在线" /></a></h1>
+                                    <nav class="fl">
+                                            <ul class="cf">
+                                                    <li
+                                                            class=""   
+                                                    ><a href="   __APP__/index.php/Home/Courses/index" title="课程">课程</a></li>
+                                                    <li             
+                                                    ><a href="__APP__/index.php/Home/Courses/partners" title="院校">院校</a></li>
+                                                    <li
+                        ><a href="#" title="学堂云">资料库</a></li>
+                       <li                   
+                                                    ><a href="__APP__/index.php/Home/Community/index" title="广场">讨论区</a></li>
+
+                                            </ul>
+                                    </nav>
+                            </div>
+
+
+
+                          <?php
+                            $a =$_SESSION['uid'];
+                                if($a){ 
+                                 ?>
+                        <div class="right fr">					
+                        <ul class="cf pre_login ng-scope" ng-if="!loginAbout.login">
+                            <li class="header_register fr"><a ng-click="goToRegister()" href="__APP__/index.php/Home/Index/loginout" title="退出">退 出</a></li>
+                            <li class="header_login_container fr cf">
+                        <div class="header_vendor fl">
+                        <a  ng-click="loginThird(&#39;/login/weibo/&#39;)" href="#"><img src="__PUBLIC__/img/xl.png" ></a>
+                        <!-- <a href="" title="新浪微博">新浪微博</a> -->	
+                        </div>
+                        <div class="header_vendor fl"><a ng-click="loginThird(&#39;/login/qq/&#39;)" href="#" title="QQ"><img src="__PUBLIC__/img/qq.png" ></a></div>
+                        <div class="header_vendor fl"><a ng-click="loginThird(&#39;/login/weixin/&#39;)" href="#" title="微信"><img src="__PUBLIC__/img/wx.png" ></a></div>
+                        <div class="header_login fl"><a ng-click="goToLogin()" href="#" title="">欢迎{$Think.session.username}登陆</a></div>
+                             <?php
+                               }
+                              else{ 
+                                 ?>
+        <div class="right fr" >
+        <ul class="cf post_login" style="display:none;" >
+                <li class="mycourse post_login_list"><a href="/dashboard" title="我的课程" >我的课程</a></li>
+                <li class="touxiang post_login_list" drop-down ng-mouseover="dropDown()" ng-mouseout="dropUp()" >
+                <a ng-href="__APP__/Home/dashboard/"><img class="touxiang_img" src="__PUBLIC__/img/default.png"></a>
+                        <div class="bubble_dropdown" ng-show="bubbleDropDownList">
+                                <span class="bubble_shape"></span>
+                                <div class="bubble_inner">
+                                        <p><a ng-href="__APP__/Home/dashboard/" title="我的主页" ><span>g</span>我的主页</a></p>
+                                        <p><a ng-href="/index.php/home/dashboard/message?type=mess" title="消息中心" ><span>c</span>消息中心</a></p>
+                                        <p><a ng-href="{[loginAbout.logout_url]}" title="退出" ><span>a</span>退出</a></p>
+                                </div>
+                        </div>
+                </li>
+                <li class="bell post_login_list">
+                    <a ng-click="loginAbout.notification.system.unread = 0" class="name" ng-href="/index.php/home/dashboard/message?type=mess" title="我的消息">
+                        <img class="bell_img" src="__PUBLIC__/img/bell.png">
+                        <span class="new_message" ng-show="loginAbout.notification.system.unread" ></span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="cf pre_login">
+                    <li class="header_register fr"><a ng-click="goToRegister()" href="__APP__/index.php/Home/Index/register" title="注册">注 册</a>
+            </li>
+                    <li class="header_login_container fr cf">
+                            <div class="header_vendor fl"><a  ng-click="loginThird(&#39;/login/weibo/&#39;)" href="#"><img src="__PUBLIC__/img/xl.png" ></a></div>
+                            <div class="header_vendor fl"><img src="__PUBLIC__/img/qq.png" ></div>
+                            <div class="header_vendor fl"><img src="__PUBLIC__/img/wx.png" ></div>
+                            <div class="header_login fl"><a href="__APP__/index.php/Home/Index/login"><img src="__PUBLIC__/img/dl.png" ></a></div>
+                    </li>
+            </ul>
+
+
+                    </div>
+                    </div>
+                    <?php
+                    }
+                    ?>
+            </div>
+            <div class="mobile_header">
+                <a href="/"><img class="logo fl" src="__PUBLIC__/img/logo.png" alt="logo" title="学堂在线" /></a>
+                <ul class="cf fr">
+                        <li><a href="/mobile" title="" target="_blank"><img src="__PUBLIC__/img/1.png" alt="" title="" /></a></li>
+                        <li><a href="/courses" title="课程"><img src="__PUBLIC__/img/2.png" alt="课程" title="课程" /></a></li>
+                        <li><a href="__APP__/Home/Courses/partners" title="院校"><img src="__PUBLIC__/img/3.png" alt="院校" title="院校" /></a></li>
+                        <li><a href="/community" title="广场"><img src="__PUBLIC__/img/4.png" alt="广场" title="广场" /></a></li>
+                        <li><a ng-click="goToLogin()" href="" title="登录"><img src="__PUBLIC__/img/5.png" alt="登录" title="登录" /></a></li>
+                </ul>
+            </div>
+    </div>
+</header>

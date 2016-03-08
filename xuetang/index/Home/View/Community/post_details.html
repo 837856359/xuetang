@@ -1,0 +1,283 @@
+<include file="Public/html/xtang_header.html" />
+
+	<link rel="icon" type="image/x-icon" href="__PUBLIC__/static/images/favicon.e0c76d09021e.ico">
+
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/reset.css">
+	
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bbs.css">
+
+
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="/static/js/html5shiv.0ce8f355891c.js"></script>
+	<![endif]-->
+</head>
+
+<body style="" class="">
+	
+		
+<include file='header'/>
+	
+
+
+
+
+
+<div style="" class="forum_postdetailpage">
+
+<section id="loginData" class="hide" data-authenticated="true" data-pagecount="1" data-currentpage="1" data-href="/community/post/430"> </section>
+
+<div style="" class="forum_postdetail">
+    <div style="" class="wrap cf">
+        <div style="" class="left wholepart fl">
+      <foreach name="arr" item="lii" >
+            <div class="postdetail_header">
+                <h1><a href="__APP__/index.php/Home/Community/activity">讨论区</a><span></span>讨论详情</h1>
+                    <div class="posttitle">{$lii.post_title}</div>
+                    <div class="postref cf">
+                        
+
+                        <div class="author">{$lii.username}</div>
+                         <div class="last_send_time fr">
+				             <php>
+								echo date('Y-m-d H:i:s',$lii[post_addtime]);
+							 </php>
+						</div>
+                    </div>
+
+            </div>  
+                <div class="postdetail_contentpart cf">
+                    <div class="postdetail_content">
+                        <p>{$lii.post_content}</p>
+                    </div>
+					
+                </div>
+              </foreach>
+			  <input type="hidden" value="{$lii.post_id}" id="post_id" name="post_id"/>
+				
+                    <div style="float:right" > 
+                          
+                           <a href="javascript:void())">回复</a>
+					 <foreach name="li" item="aaa" >
+						    {$aaa.num}
+					 </foreach>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					<!--判断是否登录-->
+					<php>
+						if($_SESSION['uid']==''){
+					</php>
+					
+						
+							<a href='__APP__/index.php/Home/Index/login'><font color='#f00'>登录</font></a>后才可点赞
+						<php>
+							}else{
+						</php>
+
+							<if condition=" $zan eq 0 "> 
+						           <input type="button" value="赞一下" id="zan" name="zan" onclick="zan()"/>
+							<else/> 
+							       <input type="button" value="取消赞" id="cancel" name="cancel" onclick="cancel()"/>
+							</if>
+					<php>
+						}
+					</php>
+
+
+						
+						<php>
+						  echo  $zan_num; 
+						</php>
+                    </div>
+					
+					<input type="hidden" value="{$id}" id="post_id1" name="post_id1"/>
+						
+				
+			 <b>以下是对本帖子的回复 <br><br></b>
+			    <div>
+					   <foreach name="lists" item="res" >  
+										 <div class="postdetail_header">
+										 <div class="">        </div>
+							<div class="">{$res.username}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$res.content}</div>
+							<div class="postref cf">
+								 <div class="last_send_time fr">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											  <php>
+												echo date('Y-m-d H:i',$res[rtime]);
+											 </php>
+								</div>
+							</div>
+                            </div>
+			 
+			
+                   </foreach>  
+				   
+				   <div style="float:right">
+				   
+				   <br><br></div><br><br>   <br><br>              
+                 </div>
+				 		  
+            <div class="replypart">
+									
+                    <h2>回复：</h2>
+                    <!--判断登录，未登录跳转登录页面-->
+                 
+                    <php>
+						if($_SESSION['uid']==''){
+					</php> 
+                    	您还没有登录，请<a href='__APP__/index.php/Home/Index/login'><font color='#f00'>登录</font></a> 
+                    	
+                    <php>
+                    	}else{
+                    </php>
+	                    <div class="noreply">
+	                        <div class="spanbg"><span></span></div>
+	                          评论不能少于五个字
+	                    </div>             
+	                    <textarea name="content"  id="content" rows="20" cols="120" ></textarea>
+	                    
+	                    <span id="sp111"> </span>
+
+	                    <div style="" id="commentRedirectPosition">
+	                        
+	                    </div>
+						
+	                    <input id="hideContent" type="hidden">
+
+	                    <div class="gotopost" id="goToPost">
+	                        <input class="btn_go_post" id="btnGoPost" value="发布观点" type="submit" onclick="replay()">
+	                    </div>
+                   <php>
+                   	}
+                   </php>
+
+            </div>
+
+        </div>
+		
+		
+		
+        <div class="right fl">
+    <div class="bulletin">
+        <div class="bulletin_board_tag">
+            <h2>学堂公告</h2>
+        </div>
+        <div class="bulletin_board">
+            <div class="hello">
+            <span class="purple_stick"></span>
+            <h3>大家好 \(0^o^0)/ !!!</h3>
+            </div>
+
+
+            <div class="bbc_wrap">
+                <p class="bulletin_board_content">欢迎来到学堂在线广场！
+<br>
+交学友，看资讯，晒笔记...
+<br>
+在广场：喧闹不可怕，沉默才可怕
+<br>
+在广场：沉淀优质内容，分享酸甜苦辣
+<br>
+现在开始吧，You are what you MOOC！
+<br>
+</p>
+            </div>
+
+            <div class="bulletin_board_time fr">
+                <p>2015-03-31</p>
+            </div>
+        </div>
+    </div>
+    <div class="recommend" id="asideFixedtwo">
+        <h1>推荐活动</h1>
+            <div class="forum_recommend_position">
+                <a href="#"><img src="__PUBLIC__/img/yunyingshixishengren.jpg"></a>
+            </div>
+            <div class="forum_recommend_position">
+                <a href="#"><img src="__PUBLIC__/img/supermanlogoefef.jpg"></a>
+            </div>
+    </div>
+</div>
+    </div>
+</div>
+</div>
+		
+<include file="Public/html/footer.html" />
+
+    <script id="requirejs" src="__PUBLIC__/js/require.js"></script>
+    <script src="__PUBLIC__/js/appCommon.js"></script>
+    <script src="__PUBLIC__/js/xuetanganalyse.js"></script>
+	
+    <script src="__PUBLIC__/js/ueditor_002.js"></script>
+    <script src="__PUBLIC__/js/ueditor.js"></script>
+
+	
+    <script src="__PUBLIC__/js/bbs.js"></script>
+</body>
+</html>
+ <script src="__PUBLIC__/js/jq.js"></script>
+ <script>
+
+ //点赞
+     function zan(){
+	    post_id1=$("#post_id1").val();       
+		//alert(post_id1);
+	     $.ajax({
+			 url:"__APP__/index.php/Home/Community/haveclick",    
+			 data:{"post_id1":post_id1},
+			 type:"post",
+			 success:function(e){
+			 	//alert(e);
+				   if(e==200){ 
+				       location.href="";
+				    }
+			    }
+		   });
+		   
+	   }
+//取消赞  cancel()
+  function cancel(){
+	    post_id1=$("#post_id1").val();       
+		//alert(post_id1);
+	     $.ajax({
+			 url:"__APP__/index.php/Home/Community/cancelclick",    
+			 data:{"post_id1":post_id1},
+			 type:"post",
+			 success:function(e){
+				   if(e==2000){ 
+				       location.href="";
+				    }
+			    }
+		   });
+		   
+	   }
+	   
+	   
+	   
+//添加回复
+  function replay(){
+    post_id=$("#post_id").val();
+    content=$("#content").val();
+	//alert(content);
+	if(content==""){
+		$("#sp111").css({"color":"red"});
+		$("#sp111").html("评论内容不能为空");
+		   return   false;
+	}else{
+	   $("#sp111").html(" ");
+	
+		 $.ajax({
+			 url:"__APP__/index.php/Home/Community/repay_con",    
+			 data:{"content":content,"post_id":post_id,},
+			 type:"post",
+			 success:function(e){
+				   if(e==200){
+					location.href='';
+				}else{
+				    alert('添加失败');location.href='';
+				}
+			 }
+		 });
+		
+     }
+ 
+ } 
+ </script>

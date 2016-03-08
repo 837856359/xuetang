@@ -1,0 +1,144 @@
+<include file="Public/html/xtang_header.html" />
+    <link rel="icon" type="image/x-icon" href="http://www.xuetangx.com/static/images/favicon.e0c76d09021e.ico">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/media.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bbs.css">
+
+<body>
+<div style="" class="forum_edit">
+<div style="" class="forum_sendpost">
+    <div style="" class="wrap cf">
+        <div style="" class="left fl">
+            <div class="send_post_header">
+                <h1>
+                    <!-- <a href="{:U('community/activity')}" class="sendposttitle">讨论区</a> -->
+                    <a href="__APP__/index.php/Home/Community/activity">讨论区</a>
+                    <span></span>发布新帖子
+                </h1>
+            </div>
+            <div style="" class="send_post_body">
+                <form style="" id="completedpost" action="__APP__/index.php/Home/Community/create" method="post" onsubmit="return fun()">
+                    <h2>帖子分类</h2>
+                    <div class="select_post_class">
+                     <php>
+                        if($_SESSION['uid']==1){
+                     </php>
+                        <select name="post_class_id">
+                            <option value="1">活动</option>
+                            <option value="2">学习分享</option>
+                            <option value="3">资讯</option>
+                            <option value="4" selected>灌水</option>
+                        </select>
+                     <php>
+                        }else{
+                     </php>
+                        <select name="post_class_id">
+                            <option value="2">学习分享</option>
+                            <option value="4" selected>灌水</option>
+                        </select>
+                    <php>
+                        }
+                    </php>
+                    </div>
+                    <h2>标题</h2>
+                    <div>
+                    <input class="title_blank" id="titleBlank" name="post_title" placeholder="字数25以内" type="text" style="outline:solid #C0C0C0;outline-width:1px" onblur="fun1()"><span id="biao" ></span>
+                    </div>
+                    <!-- ck编辑器 -->
+                    <h2>内容</h2>
+                    <div onload="return onload()" >
+                    <textarea name="post_content" id="post_content" onblur="fun2()"></textarea>
+                    </div>
+                    <span id="nei" ></span>
+                    <div class="gotopost">
+                        <input class="btn_go_post" id="btnGoPost" value="发布" type="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    <div class="right fl">
+    <div class="bulletin">
+        <div class="bulletin_board_tag">
+            <h2>学堂公告</h2>
+        </div>
+        <div class="bulletin_board">
+            <div class="hello">
+            <span class="purple_stick"></span>
+            <h3>大家好 \(0^o^0)/ !!!</h3>
+            </div>
+
+
+            <div class="bbc_wrap">
+                <p class="bulletin_board_content">欢迎来到学堂在线广场！<br>交学友，看资讯，晒笔记...<br>
+在广场：喧闹不可怕，沉默才可怕<br>在广场：沉淀优质内容，分享酸甜苦辣<br>现在开始吧，You are what you MOOC！
+<br>
+</p>
+</div>
+<div class="bulletin_board_time fr">
+<p>2015-03-31</p>
+</div>
+</div>
+</div>
+    <div class="recommend" id="asideFixedtwo">
+        <h1>推荐活动</h1>
+        <div class="forum_recommend_position">
+            <a href="#"><img src="__PUBLIC__/img/yunyingshixishengren.jpg"></a>
+        </div>
+        <div class="forum_recommend_position">
+            <a href="#"><img src="__PUBLIC__/img/supermanlogoefef.jpg"></a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<include file="Public/html/footer.html" />
+
+</body>
+</html>
+<script type="text/javascript" src="__PUBLIC__/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jq.js"></script>
+<!-- ck -->
+<script type="text/javascript"> 
+    // 启用 CKEitor 的上传功能，使用了 CKFinder 插件
+    CKEDITOR.replace( 'post_content', {
+        filebrowserBrowseUrl        : '__PUBLIC__/js/ckfinder/ckfinder.html',
+        filebrowserImageBrowseUrl   : '__PUBLIC__/js/ckfinder/ckfinder.html?Type=Images',
+        filebrowserFlashBrowseUrl   : '__PUBLIC__/js/ckfinder/ckfinder.html?Type=Flash',
+        filebrowserUploadUrl   : '__PUBLIC__/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+        filebrowserImageUploadUrl   : '__PUBLIC__/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+        filebrowserFlashUploadUrl   : '__PUBLIC__/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+    });
+</script>
+<script type="text/javascript">
+//alert($);
+    function fun1(){
+        var titleBlank=$('#titleBlank').val();
+        if(titleBlank==''){
+            $('#biao').html('<font color=red>非空</font>');
+            return false;
+        }else if(titleBlank.length>25){
+            $('#biao').html('<font color=red>字数不能超过25个</font>');
+            return false;
+        }else{
+            $('#biao').html('<font color=green>√</font>');
+            return true;
+        }
+    }
+    function fun2(){
+        var contentBlank=CKEDITOR.instances.post_content.getData();
+        //alert(contentBlank);
+        //var contentBlank=$('#contentBlank').val();
+        if(contentBlank==''){
+            $('#nei').html('<font color=red>非空</font>');
+            return false;
+        }else{
+            $('#nei').html('<font color=green>√</font>');
+            return fun1();
+        }
+    }
+    function fun(){
+        return fun1()&&fun2();
+    }
+</script>

@@ -1,0 +1,42 @@
+<div id="th" >
+<ul class="list_style" id="list_style">
+				<foreach name="course" item="test">
+				<li class="cf image_scale"> 
+					<div class="img fl"> 
+						<div class="cover">   
+							<a href="__APP__/index.php/Home/Detail/detail_list/cid/$test['cid']" title="点击查看" target="_blank">点击查看
+							</a>
+						</div> 
+						<img src="__PUBLIC__/img/images_course_image.jpg" alt="" title="{$test.name}"> 
+					</div> <div class="fl center"> 
+					<p class="name">{$test.c_name}&nbsp;&nbsp;{$test.job}&nbsp;&nbsp;{$test.name}
+					</p> 
+					<h3>
+						<a href="__APP__/index.php/Home/Detail/detail_list/cid/$test['cid']" title="{$test.cname}" target="_blank">{$test.cname}
+						</a>
+					</h3> 
+					<p class="txt">{$test.intro} </p> 
+				</div>
+				<div class="right fl">
+					<p class="orange">
+						<php>
+							if(!empty($test['num'])){
+							    echo "连载至第".$test['num']."讲";
+							}else{
+							    echo "未开课";
+							}
+						</php>
+					</p> 
+					<p class="updata">更新于
+						<php>
+							$time_now = time();
+							$add_time = $test['cc_addtime'];
+							$time = floor(($time_now-$add_time)/3600);
+							echo $time;
+						</php>小时前</p>
+					<p><a>助教在线</a></p>
+				</div> 
+				</li>
+				</foreach>
+			</ul>
+</div>

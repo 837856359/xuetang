@@ -1,0 +1,176 @@
+<include file="Public/html/xtang_header.html" />
+<link rel="icon" type="image/x-icon" href="__PUBLIC__/static/images/favicon.e0c76d09021e.ico">
+
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/reset.css">
+	
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bbs.css">
+
+<body>
+<div class="forum_detail">
+<div class="forum_poster_position">
+    <section class="po wrap cf">
+        <div class="container-fulid">
+            <div class="row">
+                <div class="left col-md-8 col-sm-10">
+                    <div class="poster_position1">
+                        <!--<a href="{:U('Community/post_details',array('id'=>$vo['post_id']))}" target="_blank">-->
+						<!-- <a href="__APP__/index.php/Home/Community/post_details/id/{$vo.post_id}"> -->
+                        <a href="#">
+                            <img src="__PUBLIC__/img/lexiangmuke.jpg" alt="" title="写500字换Kindle">
+
+                            <div class="poster_position1_cover">
+                                <div class="poster_position1_title">
+                                    <span class="ppt1 ppt">写500字换Kindle</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="middle col-md-9 col-sm-14">
+                    
+                        <div class="poster_position2">
+                            <!-- <a href="{:U('Community/post_details',array('id'=>$vo['post_id']))}" target="_blank"> -->
+                            <a href="#">
+                                <img src="__PUBLIC__/img/zongzi365-172.jpg" alt="" title="粽子节 ‖ 内有福利">
+
+                                <div class="poster_position2_cover">
+                                    <div class="poster_position2_title">
+                                        <span class="ppt2 ppt">粽子节 ‖ 内有福利</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="poster_position3">
+                            <!-- <a href="{:U('Community/post_details',array('id'=>$vo['post_id']))}" target="_blank"> -->
+                            <a href="#">
+                                <img src="__PUBLIC__/img/bijizhanlanguan3.jpg" alt="" title="学堂笔记展览馆">
+
+                                <div class="poster_position3_cover">
+                                    <div class="poster_position3_title">
+                                        <span class="ppt3 ppt">学堂笔记展览馆</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                <div class="right col-md-7 col-sm-24">
+                    <div class="bulletin_board_tag">
+                        <h2>学堂公告</h2>
+                    </div>
+                    <div class="bulletin_board">
+                        <div class="hello">
+                            <span class="purple_stick"></span>
+                            <h3>大家好 \(0^o^0)/ !!!</h3>
+                        </div>
+
+                        <div class="bbc_wrap">
+                            <p class="bulletin_board_content">欢迎来到学堂在线广场！
+<br>
+交学友，看资讯，晒笔记...
+<br>
+在广场：喧闹不可怕，沉默才可怕
+<br>
+在广场：沉淀优质内容，分享酸甜苦辣
+<br>
+现在开始吧，You are what you MOOC！
+<br>
+</p>
+                        </div>
+
+                        <div class="bulletin_board_time fr">
+                            <p>2015-03-31</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="forum_about">
+    <div class="wrap cf">
+        <div class="left fl">
+            <div class="post_header">
+                <h1>讨论区</h1>
+               <!--  <a href="{:U('Community/activity')}" class="view_whole" target="_blank">查看全部</a> -->
+               <a href="__APP__/index.php/Home/Community/activity/">查看全部</a>
+                <!--判断登录-->
+                
+                <!-- <a href="{:U('Community/post')}" class="post_btn fr"> -->
+                <a href="__APP__/index.php/Home/Community/post" class="post_btn fr">
+                    <em>我要发帖</em>
+                </a>
+               
+            </div>
+            <div class="post_body">
+
+                    
+                  <foreach name="arr" item="vo" >
+                    <div class="pb_position b classifynews">
+                        <div class="pb_position_header cf">
+                            <div class="pb_position_header_left fl">
+
+					<if condition="($vo[post_class_id] eq 2)">
+							<em>{$vo.post_class_name}</em>
+							<elseif condition="$vo[post_class_id] eq 1"/> 
+							<em class="popular_tag">
+						{$vo.post_class_name}</em>
+						<else />
+						<em class="popular_tag">
+						{$vo.post_class_name}</em>
+                    </if>
+						<!-- {:U('Community/post_details/$vo[post_id]')} -->
+                                <!-- <a target="_self" class="ptitle" href="{:U('Community/post_details',array('id'=>$vo['post_id']))}"> -->
+                                <a target="_self" class="ptitle" href="__APP__/index.php/Home/Community/post_details/id/{$vo.post_id}">
+                                    <p>{$vo.post_title}</p>
+                                </a>
+                            </div>
+                            <p class="last_send_time fr">
+							        <php>
+										echo date('Y-m-d H:i:s',$vo[post_addtime]);
+									</php>
+							</p>
+                        </div>
+
+                        <!-- <div class="pcontentwrap">
+                            <p class="pcontent">{$vo.post_content}</p>
+                        </div> -->
+
+                        <div class="pref">
+                           <!--  <div class="ptag">
+                                        <p>精华</p>
+                                        <p>推荐</p>
+                            </div> -->
+                            <div class="pinfo">
+                                <p class="popular">   </p>
+                            </div>
+                        </div>
+                    </div>
+              </foreach>
+
+            </div>
+        </div>
+        <div class="right fl" id="asideFixed">
+            <h1>推荐活动</h1>
+                <div class="forum_recommend_position">
+                    <!-- <a target="_blank" href="{:U('Community/post_details',array('id'=>$vo['post_id']))}"> -->
+                    <a href="#">
+                        <img src="__PUBLIC__/img/yunyingshixishengren.jpg">
+                    </a>
+                </div>
+                <div class="forum_recommend_position">
+                    <!-- <a target="_blank" href="{:U('Community/post_details',array('id'=>$vo['post_id']))}"> -->
+                    <a href="#">
+                        <img src="__PUBLIC__/img/supermanlogoefef.jpg">
+                    </a>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+
+	<include file="Public/html/footer.html" />
+	</body>
+</html>

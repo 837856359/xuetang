@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-cn" xmlns:wb="http://open.weibo.com/wb">
+
+
+<head>
+	<meta charset="utf-8">
+	<meta name="google-site-verification" content="e8WA0xc4_f57hKZBCIhOBrVMQhWVTgCLDry1AY_Ga-w" />
+    <meta name="keywords" content="学堂在线, MOOC，慕课，XuetangX, 清华大学，北京大学, 在线教育, 大规模开放式在线课程, 在线学习,"/>
+    <meta name="description" content="{$data.cname}" />
+	<meta name="renderer" content="webkit"/>
+    <meta property="qc:admins" content="27433770036055416706375" />
+    <meta name="apple-itunes-app" content="app-id=911639256, app-argument=https://itunes.apple.com/cn/app/xue-tang-zai-xian-guan-fang/id911639256?mt=8">
+
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	
+
+    <title>{$data.cname}</title>
+	
+
+	<link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/detail/reset.css">
+	
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/detail/index.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/detail/media.css">
+
+
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="/static/js/html5shiv.0ce8f355891c.js"></script>
+	<![endif]-->
+</head>
+
+<body class="course_detail lang_zh-cn">
+	
+		
+
+
+
+<include file="Public/html/header.html" />
+	
+
+	
+
+
+
+
+
+
+
+
+<div class="course_title">
+	<section class="video wrap cf">
+		<div class="left fl">
+				<video src="{$course.video}" controls="controls" width='600' height='500'>
+				您的浏览器不支持 video 标签。
+				</video>
+				<!--<img src="__PUBLIC__/img/course/{$data.video}" alt="" title="" />-->
+			</a>
+		</div>
+		<div class="right fl">
+			<h2 id="title1">{$course.cname}</h2>
+			<p>简介：{$course.intro}</p>
+			<hr size="1" color="#f0f0f0" align="left">
+			<div class="cf teacher">
+				<div class="fl">
+					<img src='{$course.t_img}'>
+				</div>
+				<div class="fl name">
+					<h3>{$course.name}</h3>
+					<p>{$course.job}</p>
+				</div>
+			</div>
+		
+			
+			<div class="cf conRight">
+				<div class="fr cf hide" id="conRight_id">
+					<ol class="fl" id="teacher_nav">
+							<li></li>
+							<li></li>
+					</ol>
+					<span class="fl preBtnCircle" id="preBtnCircle">‹</span>
+					<span class="fl nextBtnCircle" id="nextBtnCircle">›</span>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<section class="wrap apply apply_loading" id="course_data" data-url="/courses/MITx/6_00_1x/2014_T2/about_ajax" data-parameter=" " data-enrollment_start="2015-01-13 16:00:00+00:00" data-enrollment_end="2015-04-22 16:00:00+00:00" data-start="2015-01-25 16:00:00+00:00" data-end="2015-04-22 16:30:00+00:00" data-owner="xuetangX" data-course_id="MITx/6_00_1x/2014_T2" data-serialized="0" data-original_url="" data-enrollment_history_data="[&quot;16\u65e5&quot;, &quot;17\u65e5&quot;, &quot;18\u65e5&quot;, &quot;19\u65e5&quot;, &quot;20\u65e5&quot;, &quot;21\u65e5&quot;, &quot;22\u65e5&quot;, &quot;23\u65e5&quot;, &quot;24\u65e5&quot;, &quot;25\u65e5&quot;]" data-enrollment_history="[12874, 12875, 12875, 12875, 12875, 12875, 12875, 12875, 12875, 12875]" data-enrollment="12875" data-change_enrollment="/change_enrollment" data-ishonorcourse="true" data-iscertificate="false" data-verified_enrollment="/verified_enrollment">
+    <h2>每日报名走势</h2>
+    <div class="cf">
+        
+        <div data-highcharts-chart="0" class="fl chart" id="chart">
+		<div style="position: relative; overflow: hidden; width: 500px; height: 180px; text-align: left; line-height: normal; z-index: 0; left: 0.5px; top: 0px;" id="highcharts-0" class="highcharts-container">
+		<svg height="180" width="500" xmlns="http://www.w3.org/2000/svg" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" version="1.1">
+		<desc>Created with Highcharts 4.0.4</desc>
+		<defs><clipPath id="highcharts-1">
+		<rect height="129" width="445" y="0" x="0"></rect></clipPath></defs>
+		<rect class=" highcharts-background" fill="#FFFFFF" strokeWidth="0" height="180" width="500" y="0" x="0"></rect>
+		<path d="M 0 0" fill="rgba(92,145,181,0.25)"></path>
+		<g zIndex="1" class="highcharts-grid"></g>
+		<g zIndex="1" class="highcharts-grid">
+		<path opacity="1" zIndex="1" stroke-width="1" stroke="#C0C0C0" d="M 45 9.5 L 490 9.5" fill="none"></path>
+		<path opacity="1" zIndex="1" stroke-width="1" stroke="#C0C0C0" d="M 45 75.5 L 490 75.5" fill="none"></path>
+		<path opacity="1" zIndex="1" stroke-width="1" stroke="#C0C0C0" d="M 45 139.5 L 490 139.5" fill="none"></path>
+		</g>
+		<g zIndex="2" class="highcharts-axis">
+		<path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 111.5 139 L 111.5 149" fill="none"></path>
+		<path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 155.5 139 L 155.5 149" fill="none"></path>
+		<path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 200.5 139 L 200.5 149" fill="none"></path>
+		<path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 244.5 139 L 244.5 149" fill="none"></path>
+		<path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 289.5 139 L 289.5 149" fill="none"></path>
+		<path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 333.5 139 L 333.5 149" fill="none"></path>
+		<path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 378.5 139 L 378.5 149" fill="none"></path>
+		<path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 422.5 139 L 422.5 149" fill="none"></path>
+		<path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 467.5 139 L 467.5 149" fill="none"></path>
+		<path opacity="1" stroke-width="1" stroke="#C0D0E0" d="M 66.5 139 L 66.5 149" fill="none"></path>
+		<path visibility="visible" zIndex="7" stroke-width="1" stroke="#C0D0E0" d="M 45 139.5 L 490 139.5" fill="none"></path>
+		</g>
+		<g zIndex="2" class="highcharts-axis"></g>
+		<g zIndex="3" class="highcharts-series-group">
+		<g clip-path="url(#highcharts-1)" transform="translate(45,10) scale(1 1)" zIndex="0.1" visibility="visible" class="highcharts-series">
+		<path zIndex="0" d="M 22.25 45.9627 L 66.75 45.95625 L 111.25 45.95625 L 155.75 45.95625 L 200.25 45.95625 L 244.75 45.95625 L 289.25 45.95625 L 333.75 45.95625 L 378.25 45.95625 L 422.75 45.95625 L 422.75 129 L 22.25 129" fill="rgba(92,145,181,0.75)"></path>
+		<path stroke-linecap="round" stroke-linejoin="round" zIndex="1" stroke-width="2" stroke="#5c91b5" d="M 22.25 45.9627 L 66.75 45.95625 L 111.25 45.95625 L 155.75 45.95625 L 200.25 45.95625 L 244.75 45.95625 L 289.25 45.95625 L 333.75 45.95625 L 378.25 45.95625 L 422.75 45.95625" fill="none"></path>
+		<path style="" class=" highcharts-tracker" zIndex="2" stroke-width="22" stroke="rgba(192,192,192,0.0001)" visibility="visible" stroke-linejoin="round" d="M 12.25 45.9627 L 22.25 45.9627 L 66.75 45.95625 L 111.25 45.95625 L 155.75 45.95625 L 200.25 45.95625 L 244.75 45.95625 L 289.25 45.95625 L 333.75 45.95625 L 378.25 45.95625 L 422.75 45.95625 L 432.75 45.95625" fill="none"></path>
+		</g>
+		<g style="" clip-path="none" transform="translate(45,10) scale(1 1)" zIndex="0.1" visibility="visible" class="highcharts-markers highcharts-tracker">
+		<path d="M 422 41.95625 C 427.328 41.95625 427.328 49.95625 422 49.95625 C 416.672 49.95625 416.672 41.95625 422 41.95625 Z" fill="#5c91b5"></path>
+		<path stroke-width="1" d="M 378.25 41.95625 C 383.578 41.95625 383.578 49.95625 378.25 49.95625 C 372.922 49.95625 372.922 41.95625 378.25 41.95625 Z" fill="#5c91b5"></path>
+		<path stroke-width="1" d="M 333.75 41.95625 C 339.078 41.95625 339.078 49.95625 333.75 49.95625 C 328.422 49.95625 328.422 41.95625 333.75 41.95625 Z" fill="#5c91b5"></path>
+		<path stroke-width="1" d="M 289.25 41.95625 C 294.578 41.95625 294.578 49.95625 289.25 49.95625 C 283.922 49.95625 283.922 41.95625 289.25 41.95625 Z" fill="#5c91b5"></path>
+		<path stroke-width="1" d="M 244.75 41.95625 C 250.078 41.95625 250.078 49.95625 244.75 49.95625 C 239.422 49.95625 239.422 41.95625 244.75 41.95625 Z" fill="#5c91b5"></path>
+		<path stroke-width="1" d="M 200.25 41.95625 C 205.578 41.95625 205.578 49.95625 200.25 49.95625 C 194.922 49.95625 194.922 41.95625 200.25 41.95625 Z" fill="#5c91b5"></path>
+		<path stroke-width="1" d="M 155.75 41.95625 C 161.078 41.95625 161.078 49.95625 155.75 49.95625 C 150.422 49.95625 150.422 41.95625 155.75 41.95625 Z" fill="#5c91b5"></path>
+		<path stroke-width="1" d="M 111.25 41.95625 C 116.578 41.95625 116.578 49.95625 111.25 49.95625 C 105.922 49.95625 105.922 41.95625 111.25 41.95625 Z" fill="#5c91b5"></path>
+		<path stroke-width="1" d="M 66.75 41.95625 C 72.078 41.95625 72.078 49.95625 66.75 49.95625 C 61.422 49.95625 61.422 41.95625 66.75 41.95625 Z" fill="#5c91b5"></path>
+		<path stroke-width="1" d="M 22.25 41.9627 C 27.578 41.9627 27.578 49.9627 22.25 49.9627 C 16.922 49.9627 16.922 41.9627 22.25 41.9627 Z" fill="#5c91b5"></path>
+		</g>
+		</g>
+		<g zIndex="7" class="highcharts-axis-labels highcharts-xaxis-labels"><text opacity="1" y="159" style="width:25px;color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" x="67.25">16日</text><text opacity="1" y="159" style="width:25px;color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" x="111.75">17日</text><text opacity="1" y="159" style="width:25px;color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" x="156.25">18日</text><text opacity="1" y="159" style="width:25px;color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" x="200.75">19日</text><text opacity="1" y="159" style="width:25px;color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" x="245.25">20日</text><text opacity="1" y="159" style="width:25px;color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" x="289.75">21日</text><text opacity="1" y="159" style="width:25px;color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" x="334.25">22日</text><text opacity="1" y="159" style="width:25px;color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" x="378.75">23日</text><text opacity="1" y="159" style="width:25px;color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" x="423.25">24日</text><text opacity="1" y="159" style="width:25px;color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" x="467.75">25日</text></g><g zIndex="7" class="highcharts-axis-labels highcharts-yaxis-labels"><text opacity="1" y="142" style="width:145px;color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="end" x="30">0k</text><text opacity="1" y="77.5" style="width:145px;color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="end" x="30">10k</text><text opacity="1" y="13" style="width:145px;color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="end" x="30">20k</text></g><g visibility="visible" opacity="0" transform="translate(371,-9999)" style="cursor:default;padding:0;white-space:nowrap;" zIndex="8" class="highcharts-tooltip"><path height="49" width="104" transform="translate(1, 1)" stroke-width="5" stroke-opacity="0.049999999999999996" stroke="black" isShadow="true" d="M 3.5 0.5 L 46.5 0.5 52.5 -5.5 58.5 0.5 101 0.5 C 104.5 0.5 104.5 0.5 104.5 3.5 L 104.5 46.5 C 104.5 49.5 104.5 49.5 101.5 49.5 L 3.5 49.5 C 0.5 49.5 0.5 49.5 0.5 46.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" fill="none"></path><path height="49" width="104" transform="translate(1, 1)" stroke-width="3" stroke-opacity="0.09999999999999999" stroke="black" isShadow="true" d="M 3.5 0.5 L 46.5 0.5 52.5 -5.5 58.5 0.5 101 0.5 C 104.5 0.5 104.5 0.5 104.5 3.5 L 104.5 46.5 C 104.5 49.5 104.5 49.5 101.5 49.5 L 3.5 49.5 C 0.5 49.5 0.5 49.5 0.5 46.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" fill="none"></path><path height="49" width="104" transform="translate(1, 1)" stroke-width="1" stroke-opacity="0.15" stroke="black" isShadow="true" d="M 3.5 0.5 L 46.5 0.5 52.5 -5.5 58.5 0.5 101 0.5 C 104.5 0.5 104.5 0.5 104.5 3.5 L 104.5 46.5 C 104.5 49.5 104.5 49.5 101.5 49.5 L 3.5 49.5 C 0.5 49.5 0.5 49.5 0.5 46.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" fill="none"></path><path stroke-width="1" stroke="#5c91b5" d="M 3.5 0.5 L 46.5 0.5 52.5 -5.5 58.5 0.5 101 0.5 C 104.5 0.5 104.5 0.5 104.5 3.5 L 104.5 46.5 C 104.5 49.5 104.5 49.5 101.5 49.5 L 3.5 49.5 C 0.5 49.5 0.5 49.5 0.5 46.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" fill="rgba(249, 249, 249, .85)"></path><text y="21" style="font-size:12px;color:#333333;fill:#333333;" zIndex="1" x="8"><tspan style="font-size: 10px">24日</tspan><tspan dy="16" x="8" style="fill:#5c91b5">●</tspan><tspan dx="0"> 人数: </tspan><tspan dx="0" style="font-weight:bold">12,875</tspan></text></g></svg></div></div>
+        
+        <div class="fl count">
+            <p class="title">已报名人数</p>
+            
+            <p class="num">{$data.ucount}</p>
+            
+        </div>
+        <div class="fl apply_btn">
+             
+	        
+            <p>
+                <if condition="$data['tag'] eq '1'">
+				
+				<a class="btn_1" id="join_free" data-type="join" href="__APP__/index.php/Home/Studyadout/syllabus" title="进入课程">进入课程</a>
+				<else /> 
+				<a class="btn_1" id="join_free" data-type="join" href="__APP__/index.php/Home/Detail/detail_join" title="加入课程">加入课程</a>
+				                                                                            
+				</if>
+                
+                
+                
+            </p>
+        </div>
+    </div>
+</section>
+	
+
+</div>
+<article class="wrap cf">
+	<div class="left fl">
+		<section>
+			<h2>课程简介</h2>
+			<p>{$data.intro}</p>
+		</section>
+		<section id="course_list">
+			<h2>课程单元</h2>
+			<div class="content" style="max-height:600px;">
+				<foreach name='unit' item='k'>
+				<if condition="$data['tag'] eq 1 ">
+						<a class="btn_1" data-type="join" href="__APP__/index.php/Home/Courseware/ware"title="{$k.ch_name}">
+						{$k.ch_name}
+						</a><br />
+				<else />
+						<a class="btn_1" id="join_free" data-type="join" href="__APP__/index.php/Home/Detail/detail_join" title="{$k.ch_name}">{$k.ch_name}</a><br />
+				</if>
+				</foreach>
+			</div>
+			
+		</section>
+		
+	</div>
+	<div class="right fl">
+		<section class="kcxx">
+			<div class="time">
+				<p>
+					<span>8</span>周课时
+					<span>5</span>小时/周
+				</p>
+				<p></p>
+			</div>
+			<h2>知识储备</h2>
+			<p></p>
+		</section>
+
+		<h3>授课老师</h3>
+		<ul id="list">
+			<li>
+				<div class="tc cf">
+					<img class="fl" src="__PUBLIC__/img/teacher/{$data.t_img}" alt="" title="" />
+					<div class="fl">
+						<h4>{$data.name}</h4>
+						<p>{$data.job}</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+    </article>
+
+    <div class="bootr wrap">
+        <section class="new-courses-ref" id="new-courses-ref">
+        <div class="h2">相关课程</div>
+        <div class="scroll_courses_wrap_ref">
+            <div class="scroll_courses_ref cf">
+                <ul class="cf">
+                    <div class="container-fulid">
+                        <div class="row" id="courseref_content">
+<foreach name='about' item='course'>
+	<li class="col-md-8 col-sm-12">
+        <div class="bootr_ref">
+			
+            <a href="__APP__/index.php/Home/Detail/detail_list/cid/{$course.cid}" title="{$course.cname}" target="_blank">
+            <div class="normal">
+                <img src="{$course.cimg}" alt="{$course.cname}" title="{$course.cname}">
+				
+                <div class="ct">{$course.cname}</div>
+                <div class="ct_p"><span>{$course.people} 听课</span></div>
+            </div>
+            <div class="staff">
+                <div class="cf">
+                    <img class="fl" src="{$course.t_img}" alt="{$course.name}" title="{$course.name}">
+                    <div class="js_content fl">
+                        <h4>{$course.name}</h4>
+                        <div>{$course.job} </div>
+                    </div>
+                </div>
+                <div class="txt">课程简介：{$course.intro}</div>
+                <div class="title"><span>{$course.cname}</span></div>
+				
+            </div>
+			
+            </a>
+        </div>
+    </li>
+	
+</foreach>
+                    
+	</div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        </section>
+		
+    </div>
+<div class="hide" id="js_xy_course_detail"></div>
+
+<textarea id="video_code" style="display:none;">
+	<iframe width="560" height="315" src="/course-intro?" scrolling="no" frameborder="0" allowfullscreen=""></iframe>
+</textarea>
+
+
+
+
+
+
+<footer>
+    <div class="wrap">
+        <ul class="cf">
+            <li>
+                <div class="title">
+                    <a href="#" target="_blank">
+                        <p class="first">关于我们</p>
+                        <p class="second gy">ABOUT US</p>
+                    </a>
+                </div>
+                <p><a href="#" title="">团队介绍</a></p>
+                <p><a href="#" title="">联系我们</a></p>
+                <p><a href="#" title="" target="_blank">招聘信息</a></p>
+                <p><a href="#" title="" target="_blank">常见问题</a></p>
+            </li>
+            <li>
+                <div class="title">
+                    <a href="#" target="_blank">
+                        <p class="first">发现课程</p>
+                        <p class="second fx">ABOUT US</p>
+                    </a>
+                </div>
+                <p><a href="#" title="">云计算</a></p>
+                <p><a href="#" title="">数据科学</a></p>
+                <p><a href="#" title="">创业管理</a></p>
+                <p><a href="#" title="">更多</a></p>
+            </li>
+            <li>
+                <div class="title">
+                    <a href="#" target="_blank">
+                        <p class="first">加入我们</p>
+                        <p class="second jr">ABOUT US</p>
+                    </a>
+                </div>
+                <p><a href="#" title="" target="_blank">产品运营</a></p>
+                <p><a href="#" title="" target="_blank">资深运维攻城狮</a></p>
+                <p><a href="#" title="" target="_blank">iOS开发攻城狮</a></p>
+                <p><a href="#" title="" target="_blank">更多</a></p>
+            </li>
+			 <li>
+                <div class="title">
+                    <a href="#" target="_blank">
+                        <p class="first">加入我们</p>
+                        <p class="second jr">ABOUT US</p>
+                    </a>
+                </div>
+                <p><a href="#" title="" target="_blank">产品运营</a></p>
+                <p><a href="#" title="" target="_blank">资深运维攻城狮</a></p>
+                <p><a href="#" title="" target="_blank">iOS开发攻城狮</a></p>
+                <p><a href="#" title="" target="_blank">更多</a></p>
+            </li>
+        </ul>
+    </div>
+    <div class="copyright">
+        <div class="text fl">
+            <p>BieJingBW  2014-2015 北京BW1402phpA</p>
+            <p><a href="#" title="京ICP备14019655号" target="_blank">京ICP备80080556号</a></p>
+        </div>
+        <div class="edx_logo cf fr">
+            <a href="#" target="_blank"><img src="__PUBLIC__/js/edx_logo.262fca70a49b.png"></a>
+        </div>
+    </div>
+</footer>
+
+	
+
+    <script charset="utf-8" src="__PUBLIC__/js/v.js"></script><script src="__PUBLIC__/js/hm.js" async="" defer=""></script><script id="requirejs" src="__PUBLIC__/js/require.2d213b58c463.js"></script>
+    <script src="__PUBLIC__/js/appCommon.1c7c3f1b8788.js"></script>
+    <script src="__PUBLIC__/js/xuetanganalyse.18e1a992eb60.js"></script>
+	 <script src="__PUBLIC__/js/homepage.ccc1fe02269a.js"></script> 
+
+
+	
+
+     
+
+
+    
+
+
+
+</body>
+</html>

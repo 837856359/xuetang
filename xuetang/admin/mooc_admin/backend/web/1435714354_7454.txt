@@ -1,0 +1,5594 @@
+
+单选题：
+
+1、当创建一张表时有一个字段是性别字段,下列字段类型中最合理的是：
+
+  正确答案：C
+
+A  char(32)
+
+B  char(255)上传
+
+C  emnu
+
+D  varchar(255)
+
+2、关于数组，下列说法正确的是：
+
+  正确答案：D
+
+A  在php中一个数组中只能是数字
+
+B  php中数组的下标只能是数字
+
+C  php数组中的元素不可以是数组
+
+D  一个数组$a=array（1,2,3），执行unset($a[1])可以删除值为2的数组元素
+
+3、php中函数中explode（）的作用是：
+
+  正确答案：B
+
+A  将json数据转化成数组
+
+B  将字符串分割成数组
+
+C  将数组转化成字符串
+
+D  讲数组转化成json
+
+4、用php显示服务器端IP（）：
+
+  正确答案：A
+
+A  $_SERVER['SERVER_ADDR']
+
+B  $_SERVER['REMOTE_ADDR']
+
+C  $_SERVER['SERVER_ADDRS']
+
+D  $_SERVER['REMOTES_ADDRS']
+
+5、php中将JSON 数据转化成数组的函数是：
+
+  正确答案：D
+
+A  explode()
+
+B  implode()
+
+C  json_encode()
+
+D  json_decode()
+
+6、下列返回一天后的时间戳的函数是：
+
+  正确答案：B
+
+A  strtotime("+1 week")
+
+B  strtotime("+1 days")
+
+C  strtotime("next Monday")
+
+D  strtotime("last Sunday");
+
+7、以下关于OOP（面向对象）的说法中错误的是哪项（）：
+
+  正确答案：A
+
+A  一个类必须自己定义构造函数和析构函数
+
+B  如果构造函数定义为public 那么在实例化一个类的时候构造函数会自动执行
+
+C  构造函数关键字为__construct()
+
+D  面向对象有三个特性：封装、继承、继承
+
+8、以下那个终止一系列的RewriteCond和RewriteRule的标识：：
+
+  正确答案：B
+
+A  [NC]
+
+B  [F]
+
+C  [L]
+
+D  [R]
+
+9、以下那个是用来控制重写规则的URL重写的作用域：：
+
+  正确答案：B
+
+A  RewriteRule
+
+B  RewriteCond
+
+C  RewriteBase
+
+D  RewriteEngine
+
+10、对于重写规则，以下那个标识是触发一个显示的跳转，也可以指定跳转类型，如[R=301]：：
+
+  正确答案：A
+
+A  [R]
+
+B  [NC]
+
+C  [L]
+
+D  [F]
+
+11、对于apache变量以下那个是表示表示访问的相对地址，就是相对根目录的地址，就是域名/后面的成分，格式上包括最前面的“/”的：：
+
+  正确答案：D
+
+A  %{REQUEST_FILENAME}
+
+B  %{HTTP_REFERER}
+
+C  %{HTTP_HOST}
+
+D  %{REQUEST_URI}
+
+12、以下那个终止一系列的RewriteCond和RewriteRule的标识：：
+
+  正确答案：A
+
+A  [L]
+
+B  [NC]
+
+C  [R]
+
+D  [F]
+
+13、以下那个是指怎么写重写规则的。：：
+
+  正确答案：C
+
+A  RewriteEngine
+
+B  RewriteBase
+
+C  RewriteRule
+
+D  RewriteCond
+
+14、以下那个是用来控制重写规则的开启URL重写：：
+
+  正确答案：D
+
+A  RewriteBase
+
+B  RewriteCond
+
+C  RewriteRule
+
+D  RewriteEngine
+
+15、对于apache变量以下那个是表示来源的：：
+
+  正确答案：B
+
+A  %{HTTP_HOST}
+
+B  %{HTTP_REFERER}
+
+C  %{REQUEST_FILENAME}
+
+D  %{REQUEST_URI}
+
+16、对于重写规则，以下那个标识是用来忽略大小写的：：
+
+  正确答案：D
+
+A  [L]
+
+B  [R]
+
+C  [F]
+
+D  [NC]
+
+17、对于apache变量以下那个是表示当前访问的网址，只是指前缀部分，格式是www.xxx.com不包括“http://”和“/”：：
+
+  正确答案：C
+
+A  %{HTTP_REFERER}
+
+B  %{REQUEST_FILENAME}
+
+C  %{HTTP_HOST}
+
+D  %{REQUEST_URI}
+
+18、ajax的readyState属性值不包括()：
+
+  正确答案：B
+
+A  true
+
+B  6
+
+C  2
+
+D  false
+
+19、echo count(“abc”);输出什么：
+
+  正确答案：C
+
+A  3
+
+B  4
+
+C  true
+
+D  2
+
+20、下列关于表设计描述不正确的是：
+
+  正确答案：C
+
+A  一般把主键列设置为自增列，也可以没有自增列
+
+B  一个表中的字段名不能重复
+
+C  表中不能有自增列
+
+D  表设计要遵循三范式
+
+21、下列说法错误的是（）：
+
+  正确答案：D
+
+A  ajax传值用post传值 服务器端就是用post接收
+
+B  ajax是一种技术
+
+C  ajax传值用get传值 服务器端就是用get接收
+
+D  ajax无论使用get传值还是用post传值都是用get接收
+
+22、php中用来执行sql语句的函数为:（ ）：
+
+  正确答案：C
+
+A  mysql_fetch_assoc()
+
+B  mysql_error()
+
+C  mysql_query()
+
+D  mysql_wrong()
+
+23、mysql中varchar类型存进去 1 占几个字符：：
+
+  正确答案：D
+
+A  占1个
+
+B  占3个
+
+C  占4个
+
+D  占2个
+
+24、mysql中，myisam不支持什么？：
+
+  正确答案：D
+
+A  修改
+
+B  表锁
+
+C  查询
+
+D  事物
+
+25、js的数据类型说法正确的是( )：
+
+  正确答案：A
+
+A  基本数据类型Undefined、Null、Boolean、Number和String
+
+B  NULL和undefined类型的含义是一样的
+
+C  复合数据类型有资源
+
+D  复合数据类型对象和数组和资源
+
+26、ajax中，ajax.send()的含义是：
+
+  正确答案：C
+
+A  接收请求
+
+B  以上都对
+
+C  处理请求
+
+D  连接服务器
+
+27、下列对Array数组对象的说法不正确的是（        ）：
+
+  正确答案：D
+
+A  reverse用于颠倒数组元素的顺序
+
+B  sort用于将数组进行排序
+
+C  shift方法用于删除并返回数组的第一个元素
+
+D  向数组的最后位置加一个新元素，可以用pop方法
+判断题：
+
+1、file_exists 检查文件或目录是否存在：：
+
+正确答案：对	
+
+√
+
+×
+
+2、php只能操作mysql：：
+
+正确答案：错	
+
+√
+
+×
+
+3、phpmyadmin是操作数据库的工具：：
+
+正确答案：对	
+
+√
+
+×
+
+4、商品支付成功不需要修改订单表中的订单状态。：：：：
+
+正确答案：错	
+
+√
+
+×
+
+5、POP3协议允许电子邮件客户端下载服务器上的邮件，但是在客户端的操作（如移动邮件、标记已读等），不会反馈到服务器上，比如通过客户端收取了邮箱中的3封邮件并移动到其他文件夹，邮箱服务器上的这些邮件是没有同时被移动的 。：：：：
+
+正确答案：对	
+
+√
+
+×
+
+6、mysql默认端口号8080：：
+
+正确答案：错	
+
+√
+
+×
+
+7、商品支付成功不需要修改订单表中的订单状态。：：：：
+
+正确答案：错	
+
+√
+
+×
+
+8、LAMP是基于Linux，Apache，MySQL和PHP的开放资源网络开发平台：：：：
+
+正确答案：对	
+
+√
+
+×
+
+9、API只能返回xml数据：：：：
+
+正确答案：错	
+
+√
+
+×
+
+10、API的意思是第三方地图：：：：
+
+正确答案：错	
+
+√
+
+×
+
+11、API接口依赖PHP的mb_string扩展：：：：
+
+正确答案：错	
+
+√
+
+×
+
+12、ajax的readyState的值有0 1 2 3 4 5：：
+
+正确答案：错	
+
+√
+
+×
+
+13、file_get_contents() 将整个文件读入一个字符串：：
+
+正确答案：对	
+
+√
+
+×
+
+单选题：
+
+1、yii小物件生成一个可以用POST方法提交当前表单的按钮：
+
+  正确答案：C
+
+A  ajaxButton()
+
+B  ajaxPost()
+
+C  ajaxSubmitButton()
+
+D  ajax()
+
+2、yii小物件生成一个模型属性的输入名称：
+
+  正确答案：C
+
+A  Name()
+
+B  resolveNameId()
+
+C  resolveName()
+
+D  resolveId()
+
+3、yii小物件中生成一个重置按钮：
+
+  正确答案：D
+
+A  Button()
+
+B  submit()
+
+C  reset()
+
+D  resetButton()
+
+4、yii小物件中生成一个下拉列表是哪个：
+
+  正确答案：B
+
+A  activeSelect()
+
+B  activeDropDownlist()
+
+C  activeOption
+
+D  activeText
+
+5、yii小物件中生成列表框是哪个：
+
+  正确答案：B
+
+A  activelistButton()
+
+B  listButton()
+
+C  activeCheckBoxList()
+
+D  activeRadioButtonList()
+
+6、yii小物件中哪个是生成一个列表框：
+
+  正确答案：C
+
+A  activeCheckBoxList()
+
+B  activelist()
+
+C  listBox()
+
+D  activelistBox()
+
+7、yii小物件中哪个是生成第一个有效错误：
+
+  正确答案：C
+
+A  errorSummary()
+
+B  activerror()
+
+C  error()
+
+D  addErrorCss()
+
+8、YII小物件生成一个列表选项的是：
+
+  正确答案：C
+
+A  listData()
+
+B  listBox()
+
+C  listOption()
+
+D  listOptions()
+
+9、根据名称来生成一个有效的HTML ID：
+
+  正确答案：D
+
+A  getNameId()
+
+B  resolveNameId()
+
+C  resolveIdByName()
+
+D  getIdByName()
+
+10、关于表的横向切分正确的是：：
+
+  正确答案：D
+
+A  切分就是备份
+
+B  就是垂直分表
+
+C  切分后每张表的数据条数需要一致
+
+D  切分后每张表的字段数量是一致的
+
+11、以下那个是指怎么写重写规则的。：：
+
+  正确答案：B
+
+A  RewriteBase
+
+B  RewriteRule
+
+C  RewriteCond
+
+D  RewriteEngine
+
+12、以下那个终止一系列的RewriteCond和RewriteRule的标识：：
+
+  正确答案：C
+
+A  [L]
+
+B  [NC]
+
+C  [F]
+
+D  [R]
+
+13、是指数据库表的每一列都是不可分割的基本数据项，属于数据库范式中的哪一种：
+
+  正确答案：D
+
+A  以上都不是
+
+B  第三范式
+
+C  第二范式
+
+D  第一范式
+
+14、对于重写规则，以下那个标识是用来忽略大小写的：：
+
+  正确答案：D
+
+A  [L]
+
+B  [F]
+
+C  [R]
+
+D  [NC]
+
+15、对于重写规则，以下那个标识是触发一个显示的跳转，也可以指定跳转类型，如[R=301]：：
+
+  正确答案：C
+
+A  [NC]
+
+B  [L]
+
+C  [R]
+
+D  [F]
+
+16、对于apache变量以下那个是表示当前访问的网址，只是指前缀部分，格式是www.xxx.com不包括“http://”和“/”：：
+
+  正确答案：A
+
+A  %{HTTP_HOST}
+
+B  %{HTTP_REFERER}
+
+C  %{REQUEST_FILENAME}
+
+D  %{REQUEST_URI}
+
+17、以下那个字段类型是一个正常大小整数。有符号的范围是-2147483648到2147483647，无符号的范围是0到4294967295。：
+
+  正确答案：B
+
+A  MEDIUMINT
+
+B  INT
+
+C  SMALLINT
+
+D  TINYINT
+
+18、关于session和cookie的关系说法正确的是：：
+
+  正确答案：C
+
+A  存储session后 关闭浏览器再重新打开以前存的数据不会消失
+
+B  ecshop支持多种支付接口无需配置
+
+C  cookie保存在客户端
+
+D  session 保存在客户端
+
+19、要求数据库表中的每个实例或行必须可以被唯一的区分，属于种数据库哪范式：
+
+  正确答案：A
+
+A  第二范式
+
+B  第三范式
+
+C  以上都不是
+
+D  第一范式
+
+20、下列数据类型中不属于mysql的类型的是()：
+
+  正确答案：D
+
+A  varchar
+
+B  datetime
+
+C  int
+
+D  资源型
+判断题：
+
+1、activeId() 为模型属性生成一个输入栏的ID。 ：：
+
+正确答案：对	
+
+√
+
+×
+
+2、activeLabel() 为模型属性生成一个label标签：：
+
+正确答案：对	
+
+√
+
+×
+
+3、submitButton() 生成一个提交按钮：：
+
+正确答案：对	
+
+√
+
+×
+
+4、statefulForm() 生成一个有状态的表单标签。：：
+
+正确答案：对	
+
+√
+
+×
+
+5、activeInputField()为一个模型属性生成一个输入标签：：
+
+正确答案：对	
+
+√
+
+×
+
+6、encode() 把特殊的字符编码为HTML实体。：：
+
+正确答案：对	
+
+√
+
+×
+
+7、面向对象是一种编程思想，使编程的代码更简洁、更易于维护，并且具有更强的可重用性：：
+
+正确答案：对	
+
+√
+
+×
+
+8、MVC是一种软件设计模式或者说编程思想。：：
+
+正确答案：对	
+
+√
+
+×
+
+9、类是具有相同属性和服务的一组对象的集合：：
+
+正确答案：对	
+
+√
+
+×
+
+10、面向对象的三大特性是封装、多态、继承：：
+
+正确答案：对	
+
+√
+
+×
+
+单选题：
+
+1、yii小物件中生成一个表单开始标签的是：
+
+  正确答案：A
+
+A  form()
+
+B  activeform()
+
+C  endForm()
+
+D  activeendForm()
+
+2、yii小物件中哪个是生成HTML元素的结束标记：
+
+  正确答案：D
+
+A  closeHtml()
+
+B  activecloseTag()
+
+C  activecloseHtml()
+
+D  closeTag()
+
+3、YII小物件生成一个列表选项的是：
+
+  正确答案：A
+
+A  listOption()
+
+B  listData()
+
+C  listOptions()
+
+D  listBox()
+
+4、yii小物件中生成列表框是哪个：
+
+  正确答案：C
+
+A  activeCheckBoxList()
+
+B  activeRadioButtonList()
+
+C  listButton()
+
+D  activelistButton()
+
+5、yii小物件中哪个是生成一个列表框：
+
+  正确答案：D
+
+A  activeCheckBoxList()
+
+B  activelist()
+
+C  activelistBox()
+
+D  listBox()
+
+6、下列数据类型中不属于mysql的类型的是()：
+
+  正确答案：A
+
+A  资源型
+
+B  datetime
+
+C  varchar
+
+D  int
+
+7、关于session和cookie的关系说法正确的是：：
+
+  正确答案：C
+
+A  ecshop支持多种支付接口无需配置
+
+B  session 保存在客户端
+
+C  cookie保存在客户端
+
+D  存储session后 关闭浏览器再重新打开以前存的数据不会消失
+
+8、以下那个是指怎么写重写规则的。：：
+
+  正确答案：A
+
+A  RewriteRule
+
+B  RewriteCond
+
+C  RewriteEngine
+
+D  RewriteBase
+
+9、关于表的横向切分正确的是：：
+
+  正确答案：D
+
+A  切分后每张表的数据条数需要一致
+
+B  就是垂直分表
+
+C  切分就是备份
+
+D  切分后每张表的字段数量是一致的
+
+10、以下那个字段类型是一个正常大小整数。有符号的范围是-2147483648到2147483647，无符号的范围是0到4294967295。：
+
+  正确答案：B
+
+A  SMALLINT
+
+B  INT
+
+C  MEDIUMINT
+
+D  TINYINT
+
+11、以下那个字段类型是一个正常大小整数。有符号的范围是-2147483648到2147483647，无符号的范围是0到4294967295。：
+
+  正确答案：C
+
+A  TINYINT
+
+B  MEDIUMINT
+
+C  INT
+
+D  SMALLINT
+
+12、以下那个字段类型是一个中等大小整数。有符号的范围是-8388608到8388607，无符号的范围是0到16777215。：
+
+  正确答案：C
+
+A  INT
+
+B  TINYINT
+
+C  MEDIUMINT
+
+D  SMALLINT
+
+13、哪种情况适合横向分表：：
+
+  正确答案：A
+
+A  用户表的用户量非常大已经达到一亿条记录,登录速度慢
+
+B  腾讯公司记录QQ号码的数据库量非常大
+
+C  用户表的用户资料很多其中包括用户名,密码,积分,金钱...等字段
+
+D  某银行的交易记录数据量非常多
+
+14、对于对类的封装，下列说法错误的是：
+
+  正确答案：D
+
+A  基类可以抽象方法，而在子类中具体实现，子类不实现就不能实例化对象
+
+B  事物的共有属性应该尽可能的封装在基类中，通过继承获取
+
+C  基类中可以定义一些在子类中必须实现的方法
+
+D  一个子类只能实现一个接口类，即只能继承一个接口
+
+15、于数据库表设计符合范式要求，其中第三范式是：
+
+  正确答案：C
+
+A  是指数据库表的每一列都是不可分割的基本数据项
+
+B  要求数据库表中的每个实例或行必须可以被唯一的区分
+
+C  要求一个数据库表中不包含已在其它表中已包含的非主关键字信息。
+
+D  以上都不是
+
+16、session_id会以cookie的方式存储在客户端，当需要读取时要有对应的名字，以下那个函数用来得id：
+
+  正确答案：A
+
+A  session_id ()
+
+B  session_destroy( )
+
+C  session_name ()
+
+D  session_start()
+
+17、mysql查询中其中用于限制结果数（）：：
+
+  正确答案：B
+
+A  having
+
+B  limit
+
+C  where
+
+D  group by
+
+18、关于ajax说法错误的是()：
+
+  正确答案：A
+
+A  ajax是一门语言
+
+B  ajax可以局部刷新
+
+C  ajax从服务器返回过来的值存储在responseText中
+
+D  ajax是一种技术
+
+19、数据库设计，一下说法错误的是：
+
+  正确答案：C
+
+A  选择适当的字段类型，特别是主键
+
+B  适度的反范式,注意是适度的
+
+C  不能反三范式，反了就不查寻了
+
+D  文件、图片等大文件用文件系统存储，不用数据库
+
+20、创建惟一索引的sql语句（）：：
+
+  正确答案：A
+
+A  create unique index
+
+B  create table
+
+C  drop index
+
+D  create database
+判断题：
+
+1、encode() 把特殊的字符编码为HTML实体。：：
+
+正确答案：对	
+
+√
+
+×
+
+2、textField() 生成一个文本框：：
+
+正确答案：错	
+
+√
+
+×
+
+3、面向对象的三大特性是封装、多态、继承：：
+
+正确答案：对	
+
+√
+
+×
+
+4、类是具有相同属性和服务的一组对象的集合：：
+
+正确答案：对	
+
+√
+
+×
+
+5、MVC是一种软件设计模式或者说编程思想。：：
+
+正确答案：对	
+
+√
+
+×
+
+6、ajax的readyState的值有0 1 2 3 4：：
+
+正确答案：对	
+
+√
+
+×
+
+7、$.ajax的参数中jsonp一般要求为String类型的参数是在一个jsonp请求中重写回调函数的名字。：：
+
+正确答案：对	
+
+√
+
+×
+
+8、Session和Cookie两者最大的区别就是session存储在服务器端，而cookie是在客户端。session安全性更高，而cookie安全性弱。：：
+
+正确答案：对	
+
+√
+
+×
+
+9、对mysql字段类中SET('value1','value2',...)，一个SET最多能有64个成员。：：
+
+正确答案：对	
+
+√
+
+×
+
+10、cookie是一种在远程浏览器端存储数据并以此数据来跟踪和识别用户的机制。：：
+
+正确答案：对	
+
+√
+
+×
+
+单选题：
+
+1、以下那个是指怎么写重写规则的。：：
+
+  正确答案：B
+
+A  RewriteEngine
+
+B  RewriteRule
+
+C  RewriteCond
+
+D  RewriteBase
+
+2、以下那个字段类型是一个正常大小整数。有符号的范围是-2147483648到2147483647，无符号的范围是0到4294967295。：
+
+  正确答案：B
+
+A  TINYINT
+
+B  INT
+
+C  MEDIUMINT
+
+D  SMALLINT
+
+3、要求数据库表中的每个实例或行必须可以被唯一的区分，属于种数据库哪范式：
+
+  正确答案：C
+
+A  以上都不是
+
+B  第一范式
+
+C  第二范式
+
+D  第三范式
+
+4、于数据库表设计符合范式要求，其中第三范式是：
+
+  正确答案：A
+
+A  要求一个数据库表中不包含已在其它表中已包含的非主关键字信息。
+
+B  要求数据库表中的每个实例或行必须可以被唯一的区分
+
+C  以上都不是
+
+D  是指数据库表的每一列都是不可分割的基本数据项
+
+5、session_id会以cookie的方式存储在客户端，当需要读取时要有对应的名字，以下那个函数用来得id：
+
+  正确答案：A
+
+A  session_id ()
+
+B  session_destroy( )
+
+C  session_name ()
+
+D  session_start()
+
+6、以下那个字段类型是一个中等大小整数。有符号的范围是-8388608到8388607，无符号的范围是0到16777215。：
+
+  正确答案：C
+
+A  SMALLINT
+
+B  INT
+
+C  MEDIUMINT
+
+D  TINYINT
+
+7、关于ajax说法错误的是()：
+
+  正确答案：A
+
+A  ajax是一门语言
+
+B  ajax可以局部刷新
+
+C  ajax从服务器返回过来的值存储在responseText中
+
+D  ajax是一种技术
+
+8、mysql查询中其中用于限制结果数（）：：
+
+  正确答案：B
+
+A  where
+
+B  limit
+
+C  having
+
+D  group by
+
+9、php中函数中explode（）的作用是：
+
+  正确答案：A
+
+A  将字符串分割成数组
+
+B  讲数组转化成json
+
+C  将数组转化成字符串
+
+D  将json数据转化成数组
+
+10、关于数组，下列说法正确的是：
+
+  正确答案：A
+
+A  一个数组$a=array（1,2,3），执行unset($a[1])可以删除值为2的数组元素
+
+B  在php中一个数组中只能是数字
+
+C  php中数组的下标只能是数字
+
+D  php数组中的元素不可以是数组
+
+11、关于上传文件说法正确的是哪个（）                    ：
+
+  正确答案：B
+
+A  上传文件表单的method可以设置为GET
+
+B  使用move_uploaded_file()来移动文件
+
+C  使用$_FILE来接收文件的信息
+
+D  使用$_FILE[‘name’]可以获得文件名
+
+12、php中将JSON 数据转化成数组的函数是：
+
+  正确答案：B
+
+A  explode()
+
+B  json_decode()
+
+C  json_encode()
+
+D  implode()
+
+13、以下关于OOP（面向对象）的说法中错误的是哪项（）：
+
+  正确答案：A
+
+A  一个类必须自己定义构造函数和析构函数
+
+B  如果构造函数定义为public 那么在实例化一个类的时候构造函数会自动执行
+
+C  面向对象有三个特性：封装、继承、继承
+
+D  构造函数关键字为__construct()
+
+14、&lt;?php
+$s='abc';
+if($s==0){
+ echo &quot;is zero&quot;;
+}else{
+ echo &quot;is not zero&quot;;
+}
+
+?&gt;输出什么？
+：
+
+  正确答案：A
+
+A  is zero
+
+B  报错
+
+C  什么都不输出
+
+D  is not zero
+
+15、当创建一张表时有一个字段是价格字段,下列字段类型中最合理的是：
+
+  正确答案：D
+
+A  int
+
+B  emnu
+
+C  char(32)
+
+D  decimal(10,2)
+
+16、关于mysql数据类型说法正确的是(  )：
+
+  正确答案：B
+
+A  存储时间一般用decimal
+
+B  mysql支持多种数据类型
+
+C  char，长度可变
+
+D  存储文章一般用varchar
+
+17、当创建一张表时有一个字段是性别字段,下列字段类型中最合理的是：
+
+  正确答案：A
+
+A  emnu
+
+B  varchar(255)
+
+C  char(255)
+
+D  char(32)
+
+18、用php显示服务器端IP（）：
+
+  正确答案：A
+
+A  $_SERVER['SERVER_ADDR']
+
+B  $_SERVER['SERVER_ADDRS']
+
+C  $_SERVER['REMOTES_ADDRS']
+
+D  $_SERVER['REMOTE_ADDR']
+
+19、下列函数中将文件以一行作为分割，把整个文件读入一个数组中的是：
+
+  正确答案：D
+
+A  implode()
+
+B  json_encode()
+
+C  split()
+
+D  file()
+
+20、下列返回一天后的时间戳的函数是：
+
+  正确答案：C
+
+A  strtotime("last Sunday");
+
+B  strtotime("next Monday")
+
+C  strtotime("+1 days")
+
+D  strtotime("+1 week")
+判断题：
+
+1、面向对象的三大特性是封装、多态、继承：：
+
+正确答案：对	
+
+√
+
+×
+
+2、类是具有相同属性和服务的一组对象的集合：：
+
+正确答案：对	
+
+√
+
+×
+
+3、面向对象是一种编程思想，使编程的代码更简洁、更易于维护，并且具有更强的可重用性：：
+
+正确答案：对	
+
+√
+
+×
+
+4、$.ajax的参数中jsonp一般要求为String类型的参数是在一个jsonp请求中重写回调函数的名字。：：
+
+正确答案：对	
+
+√
+
+×
+
+5、cookie是一种在远程浏览器端存储数据并以此数据来跟踪和识别用户的机制。：：
+
+正确答案：对	
+
+√
+
+×
+
+6、ajax的readyState的值有0 1 2 3 4：：
+
+正确答案：对	
+
+√
+
+×
+
+7、Session和Cookie两者最大的区别就是session存储在服务器端，而cookie是在客户端。session安全性更高，而cookie安全性弱。：：
+
+正确答案：对	
+
+√
+
+×
+
+8、file_exists 检查文件或目录是否存在：：
+
+正确答案：对	
+
+√
+
+×
+
+9、php只能操作mysql：：
+
+正确答案：错	
+
+√
+
+×
+
+10、phpmyadmin是操作数据库的工具：：
+
+正确答案：对	
+
+√
+
+×
+
+单选题：
+
+1、php中函数中explode（）的作用是：
+
+  正确答案：A
+
+A  将字符串分割成数组
+
+B  讲数组转化成json
+
+C  将json数据转化成数组
+
+D  将数组转化成字符串
+
+2、关于上传文件说法正确的是哪个（）                    ：
+
+  正确答案：A
+
+A  使用move_uploaded_file()来移动文件
+
+B  上传文件表单的method可以设置为GET
+
+C  使用$_FILE来接收文件的信息
+
+D  使用$_FILE[‘name’]可以获得文件名
+
+3、以下关于OOP（面向对象）的说法中错误的是哪项（）：
+
+  正确答案：C
+
+A  如果构造函数定义为public 那么在实例化一个类的时候构造函数会自动执行
+
+B  构造函数关键字为__construct()
+
+C  一个类必须自己定义构造函数和析构函数
+
+D  面向对象有三个特性：封装、继承、继承
+
+4、关于mysql数据类型说法正确的是(  )：
+
+  正确答案：A
+
+A  mysql支持多种数据类型
+
+B  char，长度可变
+
+C  存储文章一般用varchar
+
+D  存储时间一般用decimal
+
+5、下列函数中将文件以一行作为分割，把整个文件读入一个数组中的是：
+
+  正确答案：D
+
+A  json_encode()
+
+B  split()
+
+C  implode()
+
+D  file()
+
+6、以下那个终止一系列的RewriteCond和RewriteRule的标识：：
+
+  正确答案：D
+
+A  [R]
+
+B  [NC]
+
+C  [F]
+
+D  [L]
+
+7、对于重写规则，以下那个标识是用来忽略大小写的：：
+
+  正确答案：A
+
+A  [NC]
+
+B  [L]
+
+C  [F]
+
+D  [R]
+
+8、以下那个是用来控制重写规则的URL重写的作用域：：
+
+  正确答案：C
+
+A  RewriteEngine
+
+B  RewriteBase
+
+C  RewriteCond
+
+D  RewriteRule
+
+9、对于重写规则，以下那个标识是触发一个显示的跳转，也可以指定跳转类型，如[R=301]：：
+
+  正确答案：D
+
+A  [F]
+
+B  [L]
+
+C  [NC]
+
+D  [R]
+
+10、以下那个是用来控制重写规则的开启URL重写：：
+
+  正确答案：C
+
+A  RewriteRule
+
+B  RewriteCond
+
+C  RewriteEngine
+
+D  RewriteBase
+
+11、mysql中varchar类型存进去 1 占几个字符：：
+
+  正确答案：A
+
+A  占2个
+
+B  占1个
+
+C  占4个
+
+D  占3个
+
+12、php中用来执行sql语句的函数为:（ ）：
+
+  正确答案：A
+
+A  mysql_query()
+
+B  mysql_error()
+
+C  mysql_wrong()
+
+D  mysql_fetch_assoc()
+
+13、echo count(“abc”);输出什么：
+
+  正确答案：C
+
+A  4
+
+B  2
+
+C  true
+
+D  3
+
+14、js的数据类型说法正确的是( )：
+
+  正确答案：A
+
+A  基本数据类型Undefined、Null、Boolean、Number和String
+
+B  复合数据类型对象和数组和资源
+
+C  复合数据类型有资源
+
+D  NULL和undefined类型的含义是一样的
+
+15、ajax中，ajax.send()的含义是：
+
+  正确答案：A
+
+A  处理请求
+
+B  接收请求
+
+C  连接服务器
+
+D  以上都对
+
+16、下列关于表设计描述不正确的是：
+
+  正确答案：B
+
+A  一个表中的字段名不能重复
+
+B  表中不能有自增列
+
+C  表设计要遵循三范式
+
+D  一般把主键列设置为自增列，也可以没有自增列
+
+17、mysql中，myisam不支持什么？：
+
+  正确答案：B
+
+A  表锁
+
+B  事物
+
+C  查询
+
+D  修改
+
+18、下列对Array数组对象的说法不正确的是（        ）：
+
+  正确答案：D
+
+A  sort用于将数组进行排序
+
+B  reverse用于颠倒数组元素的顺序
+
+C  shift方法用于删除并返回数组的第一个元素
+
+D  向数组的最后位置加一个新元素，可以用pop方法
+
+19、ajax的readyState属性值不包括()：
+
+  正确答案：D
+
+A  2
+
+B  true
+
+C  false
+
+D  6
+
+20、下列说法错误的是（）：
+
+  正确答案：A
+
+A  ajax无论使用get传值还是用post传值都是用get接收
+
+B  ajax传值用get传值 服务器端就是用get接收
+
+C  ajax传值用post传值 服务器端就是用post接收
+
+D  ajax是一种技术
+判断题：
+
+1、phpmyadmin是操作数据库的工具：：
+
+正确答案：对	
+
+√
+
+×
+
+2、file_exists 检查文件或目录是否存在：：
+
+正确答案：对	
+
+√
+
+×
+
+3、LAMP是基于Linux，Apache，MySQL和PHP的开放资源网络开发平台：：：：
+
+正确答案：对	
+
+√
+
+×
+
+4、POP3协议允许电子邮件客户端下载服务器上的邮件，但是在客户端的操作（如移动邮件、标记已读等），不会反馈到服务器上，比如通过客户端收取了邮箱中的3封邮件并移动到其他文件夹，邮箱服务器上的这些邮件是没有同时被移动的 。：：：：
+
+正确答案：对	
+
+√
+
+×
+
+5、商品支付成功不需要修改订单表中的订单状态。：：：：
+
+正确答案：错	
+
+√
+
+×
+
+6、file_get_contents() 将整个文件读入一个字符串：：
+
+正确答案：对	
+
+√
+
+×
+
+7、API接口依赖PHP的mb_string扩展：：：：
+
+正确答案：错	
+
+√
+
+×
+
+8、API只能返回xml数据：：：：
+
+正确答案：错	
+
+√
+
+×
+
+9、API的意思是第三方地图：：：：
+
+正确答案：错	
+
+√
+
+×
+
+10、ajax的readyState的值有0 1 2 3 4 5：：
+
+正确答案：错	
+
+√
+
+×
+
+单选题：
+
+1、对于apache变量以下那个是表示来源的：：
+
+  正确答案：D
+
+A  %{REQUEST_FILENAME}
+
+B  %{REQUEST_URI}
+
+C  %{HTTP_HOST}
+
+D  %{HTTP_REFERER}
+
+2、以下那个是用来控制重写规则的开启URL重写：：
+
+  正确答案：B
+
+A  RewriteBase
+
+B  RewriteEngine
+
+C  RewriteRule
+
+D  RewriteCond
+
+3、ajax中，ajax.send()的含义是：
+
+  正确答案：A
+
+A  处理请求
+
+B  连接服务器
+
+C  以上都对
+
+D  接收请求
+
+4、mysql中，myisam不支持什么？：
+
+  正确答案：C
+
+A  修改
+
+B  表锁
+
+C  事物
+
+D  查询
+
+5、下列说法错误的是（）：
+
+  正确答案：B
+
+A  ajax传值用post传值 服务器端就是用post接收
+
+B  ajax无论使用get传值还是用post传值都是用get接收
+
+C  ajax是一种技术
+
+D  ajax传值用get传值 服务器端就是用get接收
+
+6、ajax的readyState属性值不包括()：
+
+  正确答案：C
+
+A  false
+
+B  2
+
+C  6
+
+D  true
+
+7、mysql中varchar类型存进去 1 占几个字符：：
+
+  正确答案：D
+
+A  占4个
+
+B  占3个
+
+C  占1个
+
+D  占2个
+
+8、下列对Array数组对象的说法不正确的是（        ）：
+
+  正确答案：C
+
+A  reverse用于颠倒数组元素的顺序
+
+B  sort用于将数组进行排序
+
+C  向数组的最后位置加一个新元素，可以用pop方法
+
+D  shift方法用于删除并返回数组的第一个元素
+
+9、js的数据类型说法正确的是( )：
+
+  正确答案：B
+
+A  复合数据类型有资源
+
+B  基本数据类型Undefined、Null、Boolean、Number和String
+
+C  复合数据类型对象和数组和资源
+
+D  NULL和undefined类型的含义是一样的
+
+10、php中用来执行sql语句的函数为:（ ）：
+
+  正确答案：A
+
+A  mysql_query()
+
+B  mysql_fetch_assoc()
+
+C  mysql_wrong()
+
+D  mysql_error()
+
+11、启动session：
+
+  正确答案：D
+
+A  session_destory()
+
+B  session_id()
+
+C  session_name()
+
+D  session_start()
+
+12、关于sql注入说法正确的是：
+
+  正确答案：B
+
+A  sql注入不会造成数据泄露
+
+B  用户登录需要防止sql注入
+
+C  sql注入就是写代码的时候sql写的不规范
+
+D  sql注入是xss的别名
+
+13、JQuery中$.ajax()方法参数中要求为Boolean类型的参数，默认设置为true，所有请求均为异步请求。是哪个：
+
+  正确答案：D
+
+A  success
+
+B  timeout
+
+C  error
+
+D  async
+
+14、下列关于phpmyadmin的说法中错误的是：
+
+  正确答案：C
+
+A  phpmyadmin是php编写的B/S架构的软件
+
+B  phpmyadmin只能操作mysql
+
+C  phpmyadmin是数据库的一种
+
+D  phpmyadmin不能操作sqlserver
+
+15、如何声明一个PHP的用户自定义类：：：
+
+  正确答案：C
+
+A  <?php function Function_name () {} ?>
+
+B  <?php classClass_name() {} ?>
+
+C  <?php class Class_name {} ?>
+
+D  <?php functionFunction_name {} ?>
+
+16、MyISAM和Innodb存储引擎的区别是：：
+
+  正确答案：D
+
+A  Innodb支持全文索引
+
+B  myisam支持行锁
+
+C  MyISAM写入速度比较快
+
+D  Innodb支持事务,MyIsam不支持事务
+
+17、下列哪种情况适合纵向分表：：
+
+  正确答案：B
+
+A  某银行的交易记录数据量非常多
+
+B  用户表的用户资料很多其中包括用户名,密码,积分,金钱...等字段
+
+C  用户表的用户量非常大已经达到一亿条记录,登录速度慢
+
+D  腾讯公司记录QQ号码的数据库量非常大
+
+18、关于表的横向切分正确的是：
+
+  正确答案：A
+
+A  切分后每张表的字段数量是一致的
+
+B  切分就是备份
+
+C  切分后每张表的数据条数需要一致
+
+D  就是垂直分表
+
+19、关于表单验证，下列说法正确的是：
+
+  正确答案：C
+
+A  我们一般在数据入库以后在对用户输入的数据是否合法进行验证
+
+B  只要客户端禁用了js,那么js验证就不在有效
+
+C  为了增强程序的健壮性，我们可以用php对数据进行验证
+
+D  在验证时我们会对特殊字符，比如 -进行过滤
+
+20、销毁一个会话（session）中的全部数据（）：
+
+  正确答案：D
+
+A  session_id()
+
+B  session_name()
+
+C  session_start()
+
+D  session_destory()
+判断题：
+
+1、商品支付成功不需要修改订单表中的订单状态。：：：：
+
+正确答案：错	
+
+√
+
+×
+
+2、商品支付成功不需要修改订单表中的订单状态。：：：：
+
+正确答案：错	
+
+√
+
+×
+
+3、file_get_contents() 将整个文件读入一个字符串：：
+
+正确答案：对	
+
+√
+
+×
+
+4、API的意思是第三方地图：：：：
+
+正确答案：错	
+
+√
+
+×
+
+5、ajax的readyState的值有0 1 2 3 4 5：：
+
+正确答案：错	
+
+√
+
+×
+
+6、纵向分表的应用场景要比横向分表多：：
+
+正确答案：错	
+
+√
+
+×
+
+7、横向分表是一种分表方式,这样分表后每个表中的字段都是不一样的：：
+
+正确答案：错	
+
+√
+
+×
+
+8、Innodb不支持事务：：：：
+
+正确答案：错	
+
+√
+
+×
+
+9、纵向分表后形成的多张表必须是同样的存储引擎：：
+
+正确答案：错	
+
+√
+
+×
+
+10、myisam存储引擎不支持事务：：
+
+正确答案：对	
+
+√
+
+×
+
+单选题：
+
+1、js的数据类型说法正确的是( )：
+
+  正确答案：B
+
+A  复合数据类型对象和数组和资源
+
+B  基本数据类型Undefined、Null、Boolean、Number和String
+
+C  NULL和undefined类型的含义是一样的
+
+D  复合数据类型有资源
+
+2、php中用来执行sql语句的函数为:（ ）：
+
+  正确答案：A
+
+A  mysql_query()
+
+B  mysql_wrong()
+
+C  mysql_error()
+
+D  mysql_fetch_assoc()
+
+3、下列关于表设计描述不正确的是：
+
+  正确答案：B
+
+A  表设计要遵循三范式
+
+B  表中不能有自增列
+
+C  一个表中的字段名不能重复
+
+D  一般把主键列设置为自增列，也可以没有自增列
+
+4、echo count(“abc”);输出什么：
+
+  正确答案：B
+
+A  3
+
+B  true
+
+C  4
+
+D  2
+
+5、ajax的readyState属性值不包括()：
+
+  正确答案：D
+
+A  false
+
+B  2
+
+C  true
+
+D  6
+
+6、启动session：
+
+  正确答案：D
+
+A  session_name()
+
+B  session_destory()
+
+C  session_id()
+
+D  session_start()
+
+7、关于sql注入说法正确的是：
+
+  正确答案：D
+
+A  sql注入不会造成数据泄露
+
+B  sql注入是xss的别名
+
+C  sql注入就是写代码的时候sql写的不规范
+
+D  用户登录需要防止sql注入
+
+8、销毁一个会话（session）中的全部数据（）：
+
+  正确答案：C
+
+A  session_start()
+
+B  session_id()
+
+C  session_destory()
+
+D  session_name()
+
+9、MyISAM和Innodb存储引擎的区别是：：
+
+  正确答案：B
+
+A  myisam支持行锁
+
+B  Innodb支持事务,MyIsam不支持事务
+
+C  Innodb支持全文索引
+
+D  MyISAM写入速度比较快
+
+10、关于表单验证，下列说法正确的是：
+
+  正确答案：D
+
+A  只要客户端禁用了js,那么js验证就不在有效
+
+B  我们一般在数据入库以后在对用户输入的数据是否合法进行验证
+
+C  在验证时我们会对特殊字符，比如 -进行过滤
+
+D  为了增强程序的健壮性，我们可以用php对数据进行验证
+
+11、关于linux是：：
+
+  正确答案：A
+
+A  系统软件
+
+B  商品系统
+
+C  应用软件
+
+D  文章系统
+
+12、匹配a,aa或aaa：：
+
+  正确答案：C
+
+A  ^a{2,3}$
+
+B  ^a{2,3}$
+
+C  ^a{1,3}$
+
+D  ^a{1,4}$
+
+13、哪个选项是软件开发周期中的分析项目是否可行是在哪个阶段：
+
+  正确答案：A
+
+A  市场调研
+
+B  上线和维护
+
+C  概要设计
+
+D  需求分析
+
+14、以下不属于表操作的关键字是：
+
+  正确答案：B
+
+A  create
+
+B  delete
+
+C  show
+
+D  desc
+
+15、回到home目录中去()：
+
+  正确答案：C
+
+A  cd ../
+
+B  cd ./
+
+C  cd ~
+
+D  cd -
+
+16、匹配()前面的字符0次或1次：
+
+  正确答案：B
+
+A  -
+
+B  ?
+
+C  +
+
+D  *
+
+17、关于内存和硬盘的描述正确的是：：
+
+  正确答案：A
+
+A  关机后数据存储到硬盘里
+
+B  没有内存，计算机也可以启动
+
+C  关机后数据存储在内存里
+
+D  内存和硬盘没有区别，都是存数据的
+
+18、匹配所有的大写字母()：
+
+  正确答案：D
+
+A  [^A-Z]
+
+B  [A-Z]
+
+C  [^a-z]
+
+D  [a-z]
+
+19、下列说法错误的是：
+
+  正确答案：A
+
+A  使用数据库用user关键字
+
+B  创建表用create关键字
+
+C  删除数据用delete关键字，删除表用drop关键字
+
+D  表中主键不一定自增，但自增一定是主键
+
+20、在正则表达中设置了（）修饰符, 模式中的字母会进行大小写不敏感匹配：：
+
+  正确答案：D
+
+A  s
+
+B  S
+
+C  U
+
+D  i
+判断题：
+
+1、API只能返回xml数据：：：：
+
+正确答案：错	
+
+√
+
+×
+
+2、ajax的readyState的值有0 1 2 3 4 5：：
+
+正确答案：错	
+
+√
+
+×
+
+3、横向分表是一种分表方式,这样分表后每个表中的字段都是不一样的：：
+
+正确答案：错	
+
+√
+
+×
+
+4、纵向分表的应用场景要比横向分表多：：
+
+正确答案：错	
+
+√
+
+×
+
+5、纵向分表后形成的多张表必须是同样的存储引擎：：
+
+正确答案：错	
+
+√
+
+×
+
+6、nginx本身可以处理PHP，它只是个web服务器，当接收到请求后，如果是php请求，则发给php解释器处理，并把结果返回给客户端：：
+
+正确答案：错	
+
+√
+
+×
+
+7、软件就是程序，程序就是软件：：
+
+正确答案：错	
+
+√
+
+×
+
+8、nginx一般是把请求发fastcgi管理进程处理，fascgi管理进程选择cgi子进程处理结果并返回被nginx：：
+
+正确答案：对	
+
+√
+
+×
+
+9、软件产品与物质产品有很大区别，软件产品是一种消耗产品：：
+
+正确答案：错	
+
+√
+
+×
+
+10、有些主机服务商把php的allow_url_fopen选项是关闭了，就是没法直接使用file_get_contents来获取远程web页面的内容：：
+
+正确答案：对	
+
+√
+
+×
+
+单选题：
+
+1、关于XSS说法正确的是：
+
+  正确答案：C
+
+A  XSS就是sql注入
+
+B  XSS使用php写的
+
+C  XSS使用JS写的
+
+D  XSS不会影响网站的性能
+
+2、settimeout  和 setintval的说法正确的是：：
+
+  正确答案：B
+
+A  函数settimeout 和 setintval的使用是没有区别的
+
+B  setintval的执行周期可以精确到毫秒
+
+C  settimeout默认可以设置多长时间交卷
+
+D  settimeout只能精确到1天
+
+3、mysql中int类型存进去 1 占几个字符：：
+
+  正确答案：D
+
+A  占3个
+
+B  占2个
+
+C  占1个
+
+D  占4个
+
+4、关于mysql数据类型说法正确的是(  )：
+
+  正确答案：B
+
+A  存储文章一般用varchar
+
+B  varchar，长度可变
+
+C  存储时间一般用decimal
+
+D  mysql只支持一种数据类型
+
+5、关于数据库说法正确的是（  ）：
+
+  正确答案：A
+
+A  mysql的端口号默认是3306
+
+B  mysql的端口号默认不是3306
+
+C  mysql的端口号默认是200
+
+D  mysql的端口号默认是8080
+
+6、如果一个表的记录数太多了，比如上千万条，而且 需要经常检索，那么我们就有必要化整为零了。如果我拆成100个表，那么每个表只有10万条记录。当然这需要数据在逻辑上可以划分。对于这种分表方式叫做：
+
+  正确答案：B
+
+A  对于表不能分
+
+B  对表进行水平划分
+
+C  以上都不对
+
+D  对表进行垂直划分
+
+7、匹配所有的字母，数字下划线()：：
+
+  正确答案：A
+
+8、关于上传文件说法错误的是哪个（）                    ：
+
+  正确答案：A
+
+A  上传文件表单的method可以设置为GET
+
+B  使用$_FILES来接收文件的信息
+
+C  使用move_uploaded_file()来移动文件
+
+D  使用$_FILES[‘myfile’][‘name’]可以获得文件名
+
+9、下面的描述说法错误的是哪个（）                    ：
+
+  正确答案：A
+
+A  关键字final可以修饰属性、方法和类。
+
+B  类中的自定义函数称为成员方法
+
+C  关键字static、final、abstrct可以修饰方法
+
+D  关键字final、abstract可以修饰类
+
+10、Yii框架中，小物件为模型属性生成一个输入栏的ID。：
+
+  正确答案：B
+
+A  active()
+
+B  activeId()
+
+C  activeaa()
+
+D  activeabb()
+
+11、Yii框架中，小物件为模板生成一个隐藏域：
+
+  正确答案：D
+
+A  active()
+
+B  activeHiddenF()
+
+C  activeCheckBox()
+
+D  activeHiddenField()
+
+12、Yii框架中，小物件生成一个复选框列表。：
+
+  正确答案：B
+
+A  activeHiddenF()
+
+B  checkBoxList()
+
+C  button()
+
+D  css()
+
+13、Yii框架中，小物件生成一个复选框。：
+
+  正确答案：C
+
+A  activeHiddenF()
+
+B  active()
+
+C  checkBox()
+
+D  input()
+
+14、Yii框架中，小物件生成一个按钮。：
+
+  正确答案：A
+
+A  button()
+
+B  but()
+
+C  ab()
+
+D  input()
+
+15、以下关于OOP（面向对象）的说法中正确的是哪项（）：
+
+  正确答案：B
+
+A  一个类必须自己定义构造函数和析构函数
+
+B  如果构造函数定义为public 那么在实例化一个类的时候构造函数会自动执行
+
+C  构造函数只能定义为public
+
+D  面向对象有三个特性：封装、继承、克隆
+
+16、关于php的面向对象说法正确的是哪个（）：
+
+  正确答案：D
+
+A  一个父类只能有一个子类
+
+B  子类能够继承父类的所有的属性和方法（包括受保护和私有的）
+
+C  一个子类可以有多个父类
+
+D  子类通过extends关键字继承父类
+多选题：
+
+1、删除多个会员发布的文章内容,不成功的是：
+						 
+
+正确答案：B ; C ; D
+
+A delete from article where uid in($uid1,$uid2,$uid3)
+
+B delete from article where uid =($uid1,$uid2,$uid3,)
+
+C delete * from article where uid =($uid1,$uid2,$uid3)
+
+D delete * from article where uid in($uid1,$uid2,$uid3)
+
+2、关于类中的成员的修饰符，下列说法正确的是：
+						 
+
+正确答案：A ; B ; C
+
+A public修饰为公共的，可以在类外、类内、子类中访问
+
+B private修饰为私有的，只能在本类中访问
+
+C protected修饰为受保护的，可以在类内，子类中访问
+
+D publish修饰为公共的，可以在类外、类内、子类中访问
+
+3、以下关键字能够修饰类的是：
+						 
+
+正确答案：C ; D
+
+A public
+
+B Private
+
+C Final
+
+D abstract
+
+4、对于对类的封装，下列描述正确的是：
+						 
+
+正确答案：B ; C ; D
+
+A 一个子类只能实现一个接口类，即只能继承一个接口
+
+B 事物的共有属性应该尽可能的封装在基类中，通过继承获取
+
+C 基类中可以定义一些在子类中必须实现的方法
+
+D 基类可以抽象方法，而在子类中具体实现，子类不实现就不能实例化对象
+判断题：
+
+1、类中定义静态成员的关键字是static，定义常量的关键字是const：：
+
+正确答案：对	
+
+√
+
+×
+
+2、纵向分表后形成的多张表必须是同样的存储引擎：：：：
+
+正确答案：错	
+
+√
+
+×
+
+3、纵向分表也就是垂直分表：：：：
+
+正确答案：对	
+
+√
+
+×
+
+4、类的继承使用extends关键字实现（）：：
+
+正确答案：对	
+
+√
+
+×
+
+5、CREATE INDEX 语句用于在 MySQL 中创建表：：：：
+
+正确答案：错	
+
+√
+
+×
+
+6、API只能用于订单查询：：：：
+
+正确答案：错	
+
+√
+
+×
+
+7、锁表效率非常高：：：：
+
+正确答案：错	
+
+√
+
+×
+
+8、纵向分表的应用场景要比横向分表多：：：：
+
+正确答案：错	
+
+√
+
+×
+
+9、MVC设计思想:就是将代码进行分隔成模型、视图、控制器：：
+
+正确答案：对	
+
+√
+
+×
+
+10、面向对象的三大特性为封装性、继承性、接口：：
+
+正确答案：错	
+
+√
+
+×
+
+单选题：
+
+1、关于sql注入说法正确的是：
+
+  正确答案：B
+
+A  sql注入就是写代码的时候sql写的不规范
+
+B  用户登录需要防止sql注入
+
+C  sql注入是xss的别名
+
+D  sql注入不会造成数据泄露
+
+2、关于表单验证，下列说法正确的是：
+
+  正确答案：D
+
+A  我们一般在数据入库以后在对用户输入的数据是否合法进行验证
+
+B  在验证时我们会对特殊字符，比如 -进行过滤
+
+C  只要客户端禁用了js,那么js验证就不在有效
+
+D  为了增强程序的健壮性，我们可以用php对数据进行验证
+
+3、JQuery中$.ajax()方法参数中要求为Boolean类型的参数，默认设置为true，所有请求均为异步请求。是哪个：
+
+  正确答案：D
+
+A  error
+
+B  timeout
+
+C  success
+
+D  async
+
+4、销毁一个会话（session）中的全部数据（）：
+
+  正确答案：C
+
+A  session_name()
+
+B  session_id()
+
+C  session_destory()
+
+D  session_start()
+
+5、MyISAM和Innodb存储引擎的区别是：：
+
+  正确答案：C
+
+A  MyISAM写入速度比较快
+
+B  myisam支持行锁
+
+C  Innodb支持事务,MyIsam不支持事务
+
+D  Innodb支持全文索引
+
+6、匹配()前面的字符0次或1次：
+
+  正确答案：D
+
+A  -
+
+B  +
+
+C  *
+
+D  ?
+
+7、关于内存和硬盘的描述正确的是：：
+
+  正确答案：D
+
+A  内存和硬盘没有区别，都是存数据的
+
+B  没有内存，计算机也可以启动
+
+C  关机后数据存储在内存里
+
+D  关机后数据存储到硬盘里
+
+8、哪个选项是软件开发周期中的分析项目是否可行是在哪个阶段：
+
+  正确答案：C
+
+A  上线和维护
+
+B  需求分析
+
+C  市场调研
+
+D  概要设计
+
+9、匹配a,aa或aaa：：
+
+  正确答案：C
+
+A  ^a{1,4}$
+
+B  ^a{2,3}$
+
+C  ^a{1,3}$
+
+D  ^a{2,3}$
+
+10、回到home目录中去()：
+
+  正确答案：D
+
+A  cd ./
+
+B  cd -
+
+C  cd ../
+
+D  cd ~
+
+11、把文件以换行作为分隔读入一个数组中的函数是：
+
+  正确答案：B
+
+A  file_exists()
+
+B  file()
+
+C  fopen()
+
+D  fclose()
+
+12、在实现分页功能时，以下哪项与此无关：
+
+  正确答案：C
+
+A  获取当前页变量
+
+B  设置每页显示的条数
+
+C  获取最新一条记录的id值
+
+D  在 SQL 中设置 LIMIT 关键字
+
+13、假设用户表users中主要字段有id,name,age 如果要查询年龄最小的5人，正确的sql语句是：
+
+  正确答案：C
+
+A  select * from users where min(age)=5
+
+B  select * from users limit 5
+
+C  select * from users order by age limit 0,5
+
+D  select max(age)=5 from users
+
+14、用php显示客户端IP（）：
+
+  正确答案：B
+
+A  $_SERVER['REMOTE_ADDRS']
+
+B  $_SERVER['REMOTE_ADDR']
+
+C  $_SERVER['REMOTES_ADDR']
+
+D  $_SERVER['REMOTES_ADDRS']
+
+15、判断一个变量是否为数组的函数：
+
+  正确答案：D
+
+A  array_sum()
+
+B  in_array()
+
+C  foreach()
+
+D  is_array()
+
+16、下列操作mysql的函数中，执行sql语句的函数是：
+
+  正确答案：C
+
+A  mysql_fetch_row()
+
+B  mysql_fetch_array()
+
+C  mysql_query()
+
+D  mysql_num_rows()
+
+17、下列不属于表操作的关键字是：
+
+  正确答案：D
+
+A  desc
+
+B  create
+
+C  show
+
+D  delete
+
+18、把一个或多个数组合并为一个数组的函数是：
+
+  正确答案：C
+
+A  array_multisort()
+
+B  array_slice()
+
+C  array_merge()
+
+D  array_map()
+
+19、查看错误信息的mysql函数是：
+
+  正确答案：C
+
+A  mysql_connect()
+
+B  mysql_select_db()
+
+C  mysql_error()
+
+D  mysql_query()
+
+20、下列返回前一天的时间戳的函数是：
+
+  正确答案：B
+
+A  strtotime("next Monday")
+
+B  strtotime("-1 days")
+
+C  strtotime("-1 week")
+
+D  strtotime("last Sunday");
+判断题：
+
+1、纵向分表的应用场景要比横向分表多：：
+
+正确答案：错	
+
+√
+
+×
+
+2、Innodb不支持事务：：：：
+
+正确答案：错	
+
+√
+
+×
+
+3、nginx一般是把请求发fastcgi管理进程处理，fascgi管理进程选择cgi子进程处理结果并返回被nginx：：
+
+正确答案：对	
+
+√
+
+×
+
+4、软件产品与物质产品有很大区别，软件产品是一种消耗产品：：
+
+正确答案：错	
+
+√
+
+×
+
+5、nginx本身可以处理PHP，它只是个web服务器，当接收到请求后，如果是php请求，则发给php解释器处理，并把结果返回给客户端：：
+
+正确答案：错	
+
+√
+
+×
+
+6、我们可以用order  by 字段名 desc  进行倒序排列：：
+
+正确答案：对	
+
+√
+
+×
+
+7、默认的情况下禁用cookie那么session就不能用了：：
+
+正确答案：对	
+
+√
+
+×
+
+8、show databases 语句用于在 MySQL 中创建数据库：：：
+
+正确答案：错	
+
+√
+
+×
+
+9、session存服务器端,用来跟踪和识别用户信息：：
+
+正确答案：对	
+
+√
+
+×
+
+10、LAMP是指基于Linux，Apache，MySQL和PHP的开放资源网络开发平台：：
+
+正确答案：对	
+
+√
+
+×
+
+单选题：
+
+1、php中用来执行sql语句的函数为:（ ）：
+
+  正确答案：C
+
+A  mysql_fetch_assoc()
+
+B  mysql_wrong()
+
+C  mysql_query()
+
+D  mysql_error()
+
+2、js的数据类型说法正确的是( )：
+
+  正确答案：C
+
+A  复合数据类型对象和数组和资源
+
+B  NULL和undefined类型的含义是一样的
+
+C  基本数据类型Undefined、Null、Boolean、Number和String
+
+D  复合数据类型有资源
+
+3、mysql中，myisam不支持什么？：
+
+  正确答案：B
+
+A  表锁
+
+B  事物
+
+C  修改
+
+D  查询
+
+4、echo count(“abc”);输出什么：
+
+  正确答案：A
+
+A  true
+
+B  3
+
+C  2
+
+D  4
+
+5、下列关于表设计描述不正确的是：
+
+  正确答案：A
+
+A  表中不能有自增列
+
+B  一般把主键列设置为自增列，也可以没有自增列
+
+C  一个表中的字段名不能重复
+
+D  表设计要遵循三范式
+
+6、ajax中，ajax.send()的含义是：
+
+  正确答案：C
+
+A  以上都对
+
+B  连接服务器
+
+C  处理请求
+
+D  接收请求
+
+7、关于表的横向切分正确的是：
+
+  正确答案：D
+
+A  切分后每张表的数据条数需要一致
+
+B  切分就是备份
+
+C  就是垂直分表
+
+D  切分后每张表的字段数量是一致的
+
+8、下列关于phpmyadmin的说法中错误的是：
+
+  正确答案：A
+
+A  phpmyadmin是数据库的一种
+
+B  phpmyadmin不能操作sqlserver
+
+C  phpmyadmin只能操作mysql
+
+D  phpmyadmin是php编写的B/S架构的软件
+
+9、下列哪种情况适合纵向分表：：
+
+  正确答案：D
+
+A  腾讯公司记录QQ号码的数据库量非常大
+
+B  用户表的用户量非常大已经达到一亿条记录,登录速度慢
+
+C  某银行的交易记录数据量非常多
+
+D  用户表的用户资料很多其中包括用户名,密码,积分,金钱...等字段
+
+10、关于表单验证，下列说法正确的是：
+
+  正确答案：C
+
+A  我们一般在数据入库以后在对用户输入的数据是否合法进行验证
+
+B  在验证时我们会对特殊字符，比如 -进行过滤
+
+C  为了增强程序的健壮性，我们可以用php对数据进行验证
+
+D  只要客户端禁用了js,那么js验证就不在有效
+
+11、如何声明一个PHP的用户自定义类：：：
+
+  正确答案：B
+
+A  <?php function Function_name () {} ?>
+
+B  <?php class Class_name {} ?>
+
+C  <?php functionFunction_name {} ?>
+
+D  <?php classClass_name() {} ?>
+
+12、销毁一个会话（session）中的全部数据（）：
+
+  正确答案：A
+
+A  session_destory()
+
+B  session_id()
+
+C  session_name()
+
+D  session_start()
+
+13、哪个选项是软件开发周期中的分析项目是否可行是在哪个阶段：
+
+  正确答案：A
+
+A  市场调研
+
+B  概要设计
+
+C  需求分析
+
+D  上线和维护
+
+14、关于linux是：：
+
+  正确答案：B
+
+A  商品系统
+
+B  系统软件
+
+C  应用软件
+
+D  文章系统
+
+15、匹配a,aa或aaa：：
+
+  正确答案：D
+
+A  ^a{1,4}$
+
+B  ^a{2,3}$
+
+C  ^a{2,3}$
+
+D  ^a{1,3}$
+
+16、下列说法错误的是：
+
+  正确答案：C
+
+A  表中主键不一定自增，但自增一定是主键
+
+B  创建表用create关键字
+
+C  使用数据库用user关键字
+
+D  删除数据用delete关键字，删除表用drop关键字
+
+17、在正则表达中设置了（）修饰符, 模式中的字母会进行大小写不敏感匹配：：
+
+  正确答案：A
+
+A  i
+
+B  S
+
+C  s
+
+D  U
+
+18、以下不属于表操作的关键字是：
+
+  正确答案：B
+
+A  desc
+
+B  delete
+
+C  create
+
+D  show
+
+19、把文件以换行作为分隔读入一个数组中的函数是：
+
+  正确答案：A
+
+A  file()
+
+B  fopen()
+
+C  fclose()
+
+D  file_exists()
+
+20、判断一个变量是否为数组的函数：
+
+  正确答案：C
+
+A  array_sum()
+
+B  foreach()
+
+C  is_array()
+
+D  in_array()
+
+21、下列不属于表操作的关键字是：
+
+  正确答案：A
+
+A  delete
+
+B  create
+
+C  show
+
+D  desc
+
+22、查看错误信息的mysql函数是：
+
+  正确答案：A
+
+A  mysql_error()
+
+B  mysql_query()
+
+C  mysql_select_db()
+
+D  mysql_connect()
+
+23、用php显示客户端IP（）：
+
+  正确答案：B
+
+A  $_SERVER['REMOTES_ADDR']
+
+B  $_SERVER['REMOTE_ADDR']
+
+C  $_SERVER['REMOTE_ADDRS']
+
+D  $_SERVER['REMOTES_ADDRS']
+
+24、在实现分页功能时，以下哪项与此无关：
+
+  正确答案：D
+
+A  在 SQL 中设置 LIMIT 关键字
+
+B  设置每页显示的条数
+
+C  获取当前页变量
+
+D  获取最新一条记录的id值
+
+25、写出以下程序的输出结果 ___
+$b=201;
+$c=40;  
+$a=$b&gt;$c?4:5;  
+echo $a;：
+
+  正确答案：D
+
+A  6
+
+B  3
+
+C  5
+
+D  4
+
+26、对网站纯静态化说法正确的是：
+
+  正确答案：D
+
+A  ob_get_contents函数的意思是从html模板中获取内容
+
+B  纯静态与伪静态的区别是纯静态生成文件到硬盘上,伪静态是将网页内容保存到内存中
+
+C  ob_clean函数的作用是删除一个过期的文件
+
+D  纯静态能减轻服务器压力而伪静态不能
+
+27、关于网站的伪静态,下面说法正确的是：
+
+  正确答案：B
+
+A  使用ob_**系列函关于网站的伪静态,下面说法正确的是数可以实现网站的伪静态
+
+B  实现rewrite重写功能可以通过修改apache的配置文件来实现
+
+C  采用rewrite重写后可以减轻服务器的压力
+
+D  通过观察网站的url地址即可断定该网站是否采用了rewrite重写
+
+28、将数组$arr = array(2,3,4,6,8); unset($arr[3]);后$arr的值为：
+
+  正确答案：C
+
+A  array()
+
+B  array(3,4,6,8)
+
+C  array(2,3,4,8)
+
+D  array(2,3,6,8)
+
+29、关于Apache的URL重写，以下说法正确的是：
+
+  正确答案：C
+
+A  如果一个页面使用了伪静态则该页面不能动态读取数据库中的内容
+
+B  修改了.htaccess后需要重启apache才可以生效
+
+C  使用URL重写后，如果网站内部php地址发生了变化时，不用修改重写规则，使用外部地址仍然可以正常访问
+
+D  使用URL重写可以将网页地址后缀为由.php修改成.asp
+
+30、$_SERVER[‘REMOTE_ADDR’]获取到的值是：
+
+  正确答案：B
+
+A  客户端当前访问的控制器
+
+B  客户端ip
+
+C  客户端当前访问的方法
+
+D  服务器端ip
+判断题：
+
+1、file_get_contents() 将整个文件读入一个字符串：：
+
+正确答案：对	
+
+√
+
+×
+
+2、API的意思是第三方地图：：：：
+
+正确答案：错	
+
+√
+
+×
+
+3、纵向分表后形成的多张表必须是同样的存储引擎：：
+
+正确答案：错	
+
+√
+
+×
+
+4、myisam存储引擎不支持事务：：
+
+正确答案：对	
+
+√
+
+×
+
+5、nginx一般是把请求发fastcgi管理进程处理，fascgi管理进程选择cgi子进程处理结果并返回被nginx：：
+
+正确答案：对	
+
+√
+
+×
+
+6、软件产品与物质产品有很大区别，软件产品是一种消耗产品：：
+
+正确答案：错	
+
+√
+
+×
+
+7、session存服务器端,用来跟踪和识别用户信息：：
+
+正确答案：对	
+
+√
+
+×
+
+8、show databases 语句用于在 MySQL 中创建数据库：：：
+
+正确答案：错	
+
+√
+
+×
+
+9、session id存在cookie中：：
+
+正确答案：对	
+
+√
+
+×
+
+10、phpmyadmin是一种数据库：：
+
+正确答案：错	
+
+√
+
+×
+
+单选题：
+
+1、在实现分页功能时，以下哪项与此无关：
+
+  正确答案：A
+
+A  获取最新一条记录的id值
+
+B  在 SQL 中设置 LIMIT 关键字
+
+C  获取当前页变量
+
+D  设置每页显示的条数
+
+2、下列操作mysql的函数中，执行sql语句的函数是：
+
+  正确答案：B
+
+A  mysql_fetch_row()
+
+B  mysql_query()
+
+C  mysql_fetch_array()
+
+D  mysql_num_rows()
+
+3、判断一个变量是否为数组的函数：
+
+  正确答案：D
+
+A  in_array()
+
+B  foreach()
+
+C  array_sum()
+
+D  is_array()
+
+4、用php显示客户端IP（）：
+
+  正确答案：C
+
+A  $_SERVER['REMOTES_ADDR']
+
+B  $_SERVER['REMOTE_ADDRS']
+
+C  $_SERVER['REMOTE_ADDR']
+
+D  $_SERVER['REMOTES_ADDRS']
+
+5、下列返回前一天的时间戳的函数是：
+
+  正确答案：C
+
+A  strtotime("last Sunday");
+
+B  strtotime("-1 week")
+
+C  strtotime("-1 days")
+
+D  strtotime("next Monday")
+
+6、$_SERVER[‘REMOTE_ADDR’]获取到的值是：
+
+  正确答案：D
+
+A  服务器端ip
+
+B  客户端当前访问的控制器
+
+C  客户端当前访问的方法
+
+D  客户端ip
+
+7、对于MySQL的事务处理,下面说法错误的是：
+
+  正确答案：D
+
+A  开启事务后可以执行多条SQL操作，在没有commit之前，所做操作并未实际生效
+
+B  如果某表引擎是MyISAM则无法使用事务处理
+
+C  如果执行了commit后再执行rollback则所做操作都会被取消
+
+D  执行start transaction; 可以开启事务
+
+8、关于memcache下列说法正确的是：
+
+  正确答案：A
+
+A  memcache可以直接缓存数组类型的数据
+
+B  当访问一个页面时，程序将数据缓存到memcache中，如果关闭浏览器重新打开访问则无法取到memcache中的数据
+
+C  memcache只能缓存从数据库中读取的数据
+
+D  如果将数据保存到memcache时没有设置有效期，则当memcache重启后仍然能读取这些数据
+
+9、关于网站的伪静态,下面说法正确的是：
+
+  正确答案：D
+
+A  采用rewrite重写后可以减轻服务器的压力
+
+B  通过观察网站的url地址即可断定该网站是否采用了rewrite重写
+
+C  使用ob_**系列函关于网站的伪静态,下面说法正确的是数可以实现网站的伪静态
+
+D  实现rewrite重写功能可以通过修改apache的配置文件来实现
+
+10、关于Cookie说法正确的是：
+
+  正确答案：A
+
+A  可以用代码print_r($_COOKIE)来输出cookie中的值
+
+B  我们可以用setcookie(“username”,”张三”，1000)来设置cookie的有效期是1000秒
+
+C  一关闭浏览器cookie就会消失了
+
+D  我们可以用$_COOKIE['user'] = 'zhangsan设置cookie的值
+
+11、对于jsonp理解正确的是：
+
+  正确答案：D
+
+A  jsonp要求服务器端是php语言
+
+B  jsonp必须用jquery来实现
+
+C  jsonp在请求时看不到参数,因此的安全性比ajax要高
+
+D  jsonp可以实现跨域请求
+
+12、下列关于Linux的说法正确的是：
+
+  正确答案：C
+
+A  Linux只有命令行界面
+
+B  Linux可以安装windows上使用的软件
+
+C  Linux 系统的源代码是开放的
+
+D  Linux是免费的,性能不如收费的windows
+
+13、下列说法错误的是：
+
+  正确答案：A
+
+A  Linux 只能运行在字符界面下
+
+B  Linux每个软件都有确定的用途
+
+C  Linux一切都是文件
+
+D  Linux是一种自由和开放源码的类Unix操作系统
+
+14、Lamp环境是指：
+
+  正确答案：B
+
+A  windows、niginx、MySQL、php
+
+B  linux、Apache、MySQL、php
+
+C  linux、niginx、MySQL、php
+
+D  windows、apache、MySQL、php
+
+15、关于curl以下说法正确的是：
+
+  正确答案：B
+
+A  curl系列函数只能在windows上使用
+
+B  在windows下要使php支持curl系列函数，需要打开php_curl.dll扩展
+
+C  要使php支持curl系列函数，需要安装curl服务器
+
+D  要使php支持curl系列函数需开启apache的rewrite模块
+
+16、将数组$arr = array(2,3,4,6,8);转换为 array(2,4,6,8);可以使用代码：
+
+  正确答案：C
+
+A  unset($arr[3])
+
+B  unset($arr[0])
+
+C  unset($arr[1])
+
+D  $arr = $arr - 3
+
+17、面向对象三大特征不包括：
+
+  正确答案：C
+
+A  多态
+
+B  封装
+
+C  接口
+
+D  继承
+
+18、关于数据合法性验证下面说法正确的是：
+
+  正确答案：B
+
+A  PHP验证与Javascript验证的不同是PHP验证增强了用户体验
+
+B  一个安全健壮的程序PHP验证必不可少
+
+C  仅仅通过PHP验证是不安全的,所以要增加Javascript验证
+
+D  Javascript验证也需要执行PHP代码
+
+19、在rewrite中的一些规则中出现了$1,则$1表示：
+
+  正确答案：C
+
+A  结束位置
+
+B  起始位置
+
+C  第一个括号所匹配到的内容
+
+D  定义的一个变量
+
+20、MySQL中支持事务的存储引擎是：
+
+  正确答案：B
+
+A  isam
+
+B  innodb
+
+C  MyISAM
+
+D  HEAP
+判断题：
+
+1、LAMP是指基于Linux，Apache，MySQL和PHP的开放资源网络开发平台：：
+
+正确答案：对	
+
+√
+
+×
+
+2、我们可以用order  by 字段名 desc  进行倒序排列：：
+
+正确答案：对	
+
+√
+
+×
+
+3、MySQL的数据类型中char的速度比varchar速度快：：
+
+正确答案：对	
+
+√
+
+×
+
+4、phpmyadmin是一种数据库：：
+
+正确答案：错	
+
+√
+
+×
+
+5、session id存在cookie中：：
+
+正确答案：对	
+
+√
+
+×
+
+6、判断一个变量是否被定义使用的函数是  isset()：：
+
+正确答案：对	
+
+√
+
+×
+
+7、smarty是一个开源框架：：
+
+正确答案：错	
+
+√
+
+×
+
+8、子类继承父类的关键字是extends：：
+
+正确答案：对	
+
+√
+
+×
+
+9、测试网络是否畅通的命令是ping：：
+
+正确答案：对	
+
+√
+
+×
+
+10、一个子类可以有多个父类：：
+
+正确答案：错	
+
+√
+
+×
+
+单选题：
+
+1、yii框架中查询关键字是：
+
+  正确答案：D
+
+A  select
+
+B  add
+
+C  get
+
+D  find
+
+2、yii框架中控制器是在哪个文件夹下：
+
+  正确答案：C
+
+A  commands
+
+B  tests
+
+C  controllers
+
+D  components
+
+3、yii中主框架文件是哪个：
+
+  正确答案：C
+
+A  demos
+
+B  requirements
+
+C  framework
+
+D  system
+
+4、yii框架中修改的关键字是：
+
+  正确答案：C
+
+A  select
+
+B  insert
+
+C  update
+
+D  delete
+
+5、yii框架中生成model的url是：
+
+  正确答案：C
+
+A  http://www.yii.com/yii/index.php?r=site/index
+
+B  http://www.yii.com/yii/index.php?r=index
+
+C  http://www.yii.com/yii/index.php?r=gii
+
+D  http://www.yii.com/yii/index.php?r=site
+
+6、yii框架中删除的关键字是什么：
+
+  正确答案：B
+
+A  add
+
+B  delete
+
+C  insert
+
+D  select
+
+7、yii框架中模板文件在哪个文件夹中：
+
+  正确答案：B
+
+A  controllers
+
+B  views
+
+C  models
+
+D  view
+
+8、yii框架中添加的方法是：
+
+  正确答案：A
+
+A  save
+
+B  update
+
+C  add
+
+D  insert
+
+9、yii项目目录文件是哪个：
+
+  正确答案：A
+
+A  protected
+
+B  themes
+
+C  framework
+
+D  assets
+
+10、yii中开启gii要修改那个文件：
+
+  正确答案：C
+
+A  config.php
+
+B  database.php
+
+C  main.php
+
+D  test.php
+判断题：
+
+1、yii框架中的配置文件是main.php：：
+
+正确答案：对	
+
+√
+
+×
+
+2、yii框架在命令行安装：：
+
+正确答案：对	
+
+√
+
+×
+
+3、yii中更新的关键字是save：：
+
+正确答案：对	
+
+√
+
+×
+
+4、yii框架直接解压就能使用：：
+
+正确答案：错	
+
+√
+
+×
+
+5、Yii的URL地址是http://yii.com/index.php?r=site/index：：
+
+正确答案：对	
+
+√
+
+×
+
+单选题：
+
+1、弹出一个带有确认和取消按钮的对话框的是（）：
+
+  正确答案：C
+
+A  window.close()
+
+B  window.prompt()
+
+C  window.confirm()
+
+D  window.open()
+
+2、yii文件上传类是：
+
+  正确答案：B
+
+A  uploadfile
+
+B  CUploadedFile
+
+C  upload
+
+D  uploaded
+
+3、关于js和php正则验证说法正确的是（ ）：
+
+  正确答案：A
+
+A  js的验证可以提高用户体验，php端的验证可以保证数据安全，两者结合使用最好
+
+B  js和php正则都是为了验证数据所以只要有一个就可以了
+
+C  js已经在客户端验证了，在php的服务端就不要在验证了
+
+D  js属于客户端语言，很容易被用户禁止掉，验证就无效了，所以可以不需要js验证
+
+4、如果要弹出一个确认删除对话框，正确的是（）：
+
+  正确答案：A
+
+A  confirm('您确定要删除吗？')
+
+B  prompt('您确定要删除吗？')
+
+C  alert('您确定要删除吗？')
+
+D  msgbox('您确定要删除吗？')
+
+5、下列能正则能匹配出6,12位的数字的表达式的是（）：
+
+  正确答案：A
+
+6、下列能实现能实现刷新功能的是（）：
+
+  正确答案：D
+
+A  以上说法都不正确
+
+B  history.go(-1)
+
+C  history.go(1)
+
+D  history.go(0)
+
+7、下列能实现能实现后退功能的是（）：
+
+  正确答案：D
+
+A  history.go(1)
+
+B  以上说法都不正确
+
+C  history.go(0)
+
+D  history.go(-1)
+
+8、setTimeout（&quot;alert('welcome');&quot;,1000）这段代码的意思是（）：
+
+  正确答案：A
+
+A  每隔一秒弹出一个对话框
+
+B  等待1秒后，弹出一个对话框
+
+C  语句报错，语法有误
+
+D  等待1000秒后，在弹出一个对话框
+
+9、下列能实现能实现前进功能的是（）：
+
+  正确答案：B
+
+A  以上说法都不正确
+
+B  history.go(1)
+
+C  history.go(0)
+
+D  history.go(-1)
+
+10、yii框架默认模板文件后缀是：
+
+  正确答案：B
+
+A  .tpl
+
+B  .php
+
+C  .html
+
+D  .dwt
+
+11、yii框架中模板文件在哪个文件夹中：
+
+  正确答案：B
+
+A  controllers
+
+B  views
+
+C  view
+
+D  models
+
+12、yii框架中添加的方法是：
+
+  正确答案：A
+
+A  save
+
+B  insert
+
+C  add
+
+D  update
+
+13、yii中开启gii要修改那个文件：
+
+  正确答案：C
+
+A  database.php
+
+B  test.php
+
+C  main.php
+
+D  config.php
+
+14、yii框架中控制器是在哪个文件夹下：
+
+  正确答案：D
+
+A  commands
+
+B  components
+
+C  tests
+
+D  controllers
+
+15、yii框架中修改的关键字是：
+
+  正确答案：A
+
+A  update
+
+B  insert
+
+C  select
+
+D  delete
+
+16、yii框架中删除的关键字是什么：
+
+  正确答案：C
+
+A  select
+
+B  insert
+
+C  delete
+
+D  add
+
+17、yii框架中查询关键字是：
+
+  正确答案：B
+
+A  add
+
+B  find
+
+C  select
+
+D  get
+
+18、yii框架中生成model的url是：
+
+  正确答案：D
+
+A  http://www.yii.com/yii/index.php?r=index
+
+B  http://www.yii.com/yii/index.php?r=site/index
+
+C  http://www.yii.com/yii/index.php?r=site
+
+D  http://www.yii.com/yii/index.php?r=gii
+
+19、yii项目目录文件是哪个：
+
+  正确答案：A
+
+A  protected
+
+B  framework
+
+C  assets
+
+D  themes
+
+20、yii中主框架文件是哪个：
+
+  正确答案：A
+
+A  framework
+
+B  demos
+
+C  system
+
+D  requirements
+判断题：
+
+1、yii框架项目目录文件夹是framework：：
+
+正确答案：错	
+
+√
+
+×
+
+2、yii框架renderPartial不输出父模板的内容：：
+
+正确答案：对	
+
+√
+
+×
+
+3、删除的sql语句是$sql=&quot;delete from news where nid=$id&quot;;：：
+
+正确答案：对	
+
+√
+
+×
+
+4、yii框架中模板层是models：：
+
+正确答案：错	
+
+√
+
+×
+
+5、sort用于将数组进行排序：：
+
+正确答案：对	
+
+√
+
+×
+
+6、Yii的URL地址是http://yii.com/index.php?r=site/index：：
+
+正确答案：对	
+
+√
+
+×
+
+7、yii框架直接解压就能使用：：
+
+正确答案：错	
+
+√
+
+×
+
+8、yii框架中的配置文件是main.php：：
+
+正确答案：对	
+
+√
+
+×
+
+9、yii中更新的关键字是save：：
+
+正确答案：对	
+
+√
+
+×
+
+10、yii框架在命令行安装：：
+
+正确答案：对	
+
+√
+
+×
+
+单选题：
+
+1、yii框架默认模板文件后缀是：
+
+  正确答案：B
+
+A  .tpl
+
+B  .php
+
+C  .dwt
+
+D  .html
+
+2、关于js和php正则验证说法正确的是（ ）：
+
+  正确答案：D
+
+A  js已经在客户端验证了，在php的服务端就不要在验证了
+
+B  js属于客户端语言，很容易被用户禁止掉，验证就无效了，所以可以不需要js验证
+
+C  js和php正则都是为了验证数据所以只要有一个就可以了
+
+D  js的验证可以提高用户体验，php端的验证可以保证数据安全，两者结合使用最好
+
+3、yii文件上传类是：
+
+  正确答案：C
+
+A  uploadfile
+
+B  uploaded
+
+C  CUploadedFile
+
+D  upload
+
+4、下列能实现能实现后退功能的是（）：
+
+  正确答案：D
+
+A  history.go(0)
+
+B  history.go(1)
+
+C  以上说法都不正确
+
+D  history.go(-1)
+
+5、如果要弹出一个确认删除对话框，正确的是（）：
+
+  正确答案：A
+
+A  confirm('您确定要删除吗？')
+
+B  prompt('您确定要删除吗？')
+
+C  msgbox('您确定要删除吗？')
+
+D  alert('您确定要删除吗？')
+
+6、yii框架中添加的方法是：
+
+  正确答案：B
+
+A  insert
+
+B  save
+
+C  update
+
+D  add
+
+7、yii项目目录文件是哪个：
+
+  正确答案：B
+
+A  framework
+
+B  protected
+
+C  assets
+
+D  themes
+
+8、yii框架中模板文件在哪个文件夹中：
+
+  正确答案：A
+
+A  views
+
+B  view
+
+C  models
+
+D  controllers
+
+9、yii中主框架文件是哪个：
+
+  正确答案：D
+
+A  system
+
+B  demos
+
+C  requirements
+
+D  framework
+
+10、yii框架中生成model的url是：
+
+  正确答案：B
+
+A  http://www.yii.com/yii/index.php?r=index
+
+B  http://www.yii.com/yii/index.php?r=gii
+
+C  http://www.yii.com/yii/index.php?r=site
+
+D  http://www.yii.com/yii/index.php?r=site/index
+
+11、settimeout  和 setintval的说法正确的是：：
+
+  正确答案：D
+
+A  settimeout默认可以设置多长时间交卷
+
+B  函数settimeout 和 setintval的使用是没有区别的
+
+C  settimeout只能精确到1天
+
+D  setintval的执行周期可以精确到毫秒
+
+12、关于XSS说法正确的是：
+
+  正确答案：D
+
+A  XSS就是sql注入
+
+B  XSS不会影响网站的性能
+
+C  XSS使用php写的
+
+D  XSS使用JS写的
+
+13、关于秒杀的说法正确的是：：
+
+  正确答案：A
+
+A  为了防止用户的恶意行为,在用户发起秒杀请求时需要判断是否在规定的时间范围内发起的秒杀请求
+
+B  因为在客户端通过js限制秒杀时间未到不能点击秒杀按钮,所以为了减轻服务器压力,服务器可以不判断秒杀时间
+
+C  为了解决高并发问题秒杀一般会设置比较高的价格
+
+D  秒杀倒计时是使用php的函数实现每秒递减的
+
+14、mysql中int类型存进去 1 占几个字符：：
+
+  正确答案：B
+
+A  占3个
+
+B  占4个
+
+C  占1个
+
+D  占2个
+
+15、Innodb的特性是什么？：
+
+  正确答案：B
+
+A  适合统计
+
+B  支持事物
+
+C  不支持事物
+
+D  方便检索
+
+16、mysql中char类型存进去 “1” 占几个字符：：
+
+  正确答案：A
+
+A  占1个
+
+B  占3个
+
+C  占2个
+
+D  占4个
+
+17、PHP哪个参数能获取客户端IP地址：
+
+  正确答案：A
+
+A  $_SERVER
+
+B  $_GET
+
+C  $_config
+
+D  $_POST
+
+18、关于js和jquery的说法正确的是：：
+
+  正确答案：D
+
+A  jquery只能和PHP结合
+
+B  jquery是php框架
+
+C  jquery是和js类似的一种客户端编程语言
+
+D  jquery是使用js代码封装的一个js框架(类库)
+
+19、关于sql注入说法正确的是：
+
+  正确答案：D
+
+A  sql注入就是PHP代码
+
+B  sql注入就是XSS攻击
+
+C  sql注入不会影响数据库数据
+
+D  sql注入能把数据表清空
+
+20、已知$a=1;$b=$a;$a=10;$b=?：
+
+  正确答案：B
+
+A  $b=11
+
+B  $b=1
+
+C  $b=0
+
+D  $b=10
+判断题：
+
+1、yii框架项目目录文件夹是framework：：
+
+正确答案：错	
+
+√
+
+×
+
+2、yii框架中模板层是models：：
+
+正确答案：错	
+
+√
+
+×
+
+3、yii框架renderPartial不输出父模板的内容：：
+
+正确答案：对	
+
+√
+
+×
+
+4、Yii的URL地址是http://yii.com/index.php?r=site/index：：
+
+正确答案：对	
+
+√
+
+×
+
+5、yii框架在命令行安装：：
+
+正确答案：对	
+
+√
+
+×
+
+6、单例模式可以节省内存和资源：：
+
+正确答案：对	
+
+√
+
+×
+
+7、类中定义静态成员的关键字是static，定义常量的关键字是const：：
+
+正确答案：对	
+
+√
+
+×
+
+8、类的继承使用extends关键字实现（）：：
+
+正确答案：对	
+
+√
+
+×
+
+9、纵向分表后形成的多张表必须是同样的存储引擎：：：：
+
+正确答案：错	
+
+√
+
+×
+
+10、纵向分表也就是垂直分表：：：：
+
+正确答案：对	
+
+√
+
+×
+
+单选题：
+
+1、关于js和php正则验证说法正确的是（ ）：
+
+  正确答案：B
+
+A  js属于客户端语言，很容易被用户禁止掉，验证就无效了，所以可以不需要js验证
+
+B  js的验证可以提高用户体验，php端的验证可以保证数据安全，两者结合使用最好
+
+C  js已经在客户端验证了，在php的服务端就不要在验证了
+
+D  js和php正则都是为了验证数据所以只要有一个就可以了
+
+2、下列能实现能实现后退功能的是（）：
+
+  正确答案：C
+
+A  history.go(0)
+
+B  以上说法都不正确
+
+C  history.go(-1)
+
+D  history.go(1)
+
+3、yii文件上传类是：
+
+  正确答案：A
+
+A  CUploadedFile
+
+B  uploaded
+
+C  uploadfile
+
+D  upload
+
+4、setTimeout（&quot;alert('welcome');&quot;,1000）这段代码的意思是（）：
+
+  正确答案：B
+
+A  等待1000秒后，在弹出一个对话框
+
+B  每隔一秒弹出一个对话框
+
+C  语句报错，语法有误
+
+D  等待1秒后，弹出一个对话框
+
+5、下列能实现能实现前进功能的是（）：
+
+  正确答案：B
+
+A  以上说法都不正确
+
+B  history.go(1)
+
+C  history.go(0)
+
+D  history.go(-1)
+
+6、关于sql注入说法正确的是：
+
+  正确答案：A
+
+A  sql注入能把数据表清空
+
+B  sql注入就是XSS攻击
+
+C  sql注入就是PHP代码
+
+D  sql注入不会影响数据库数据
+
+7、关于XSS说法正确的是：
+
+  正确答案：C
+
+A  XSS不会影响网站的性能
+
+B  XSS就是sql注入
+
+C  XSS使用JS写的
+
+D  XSS使用php写的
+
+8、已知$a=1;$b=$a;$a=10;$b=?：
+
+  正确答案：B
+
+A  $b=0
+
+B  $b=1
+
+C  $b=10
+
+D  $b=11
+
+9、mysql中int类型存进去 1 占几个字符：：
+
+  正确答案：B
+
+A  占1个
+
+B  占4个
+
+C  占3个
+
+D  占2个
+
+10、Innodb的特性是什么？：
+
+  正确答案：C
+
+A  方便检索
+
+B  不支持事物
+
+C  支持事物
+
+D  适合统计
+
+11、以下哪个函数用于判断是否是目录。：
+
+  正确答案：A
+
+A  is_dir()
+
+B  mkdir()
+
+C  filemtime()
+
+D  is_file()
+
+12、创建数据库的sql语句 （）：：
+
+  正确答案：D
+
+A  create index
+
+B  drop index
+
+C  create table
+
+D  create database
+
+13、匹配所有的字母，数字下划线()：：
+
+  正确答案：A
+
+14、apache默认端口是：
+
+  正确答案：A
+
+A  80
+
+B  25
+
+C  143
+
+D  110
+
+15、已知$arr = array();$arr[] =array( 'a');则$arr的值是：：
+
+  正确答案：C
+
+A  array(1=>'a');
+
+B  array('a'=>0);
+
+C  array(0=>array('a'))
+
+D  array('a'=>1);
+
+16、关于数据库说法正确的是（  ）：
+
+  正确答案：B
+
+A  mysql的端口号默认不是3306
+
+B  mysql的端口号默认是3306
+
+C  mysql的端口号默认是200
+
+D  mysql的端口号默认是8080
+
+17、session_id会以cookie的方式存储在客户端，当需要读取时要有对应的名字，以下那个函数用来得名字：
+
+  正确答案：A
+
+A  session_name ()
+
+B  session_id ()
+
+C  session_destroy( )
+
+D  session_start()
+
+18、关于mysql数据类型说法正确的是(  )：
+
+  正确答案：D
+
+A  mysql只支持一种数据类型
+
+B  存储时间一般用decimal
+
+C  存储文章一般用varchar
+
+D  varchar，长度可变
+
+19、关于mysql说法正确的是（   ）：
+
+  正确答案：B
+
+A  mysql只能由php操作
+
+B  mysql在命令行下可以操作
+
+C  mysql是一种线性数据库
+
+D  mysql是一种B/S操作软件
+
+20、如果一个表的记录数太多了，比如上千万条，而且 需要经常检索，那么我们就有必要化整为零了。如果我拆成100个表，那么每个表只有10万条记录。当然这需要数据在逻辑上可以划分。对于这种分表方式叫做：
+
+  正确答案：B
+
+A  对表进行垂直划分
+
+B  对表进行水平划分
+
+C  对于表不能分
+
+D  以上都不对
+判断题：
+
+1、yii框架中模板层是models：：
+
+正确答案：错	
+
+√
+
+×
+
+2、sort用于将数组进行排序：：
+
+正确答案：对	
+
+√
+
+×
+
+3、单例模式可以节省内存和资源：：
+
+正确答案：对	
+
+√
+
+×
+
+4、纵向分表后形成的多张表必须是同样的存储引擎：：：：
+
+正确答案：错	
+
+√
+
+×
+
+5、类的继承使用extends关键字实现（）：：
+
+正确答案：对	
+
+√
+
+×
+
+6、API只能用于订单查询：：：：
+
+正确答案：错	
+
+√
+
+×
+
+7、纵向分表的应用场景要比横向分表多：：：：
+
+正确答案：错	
+
+√
+
+×
+
+8、锁表效率非常高：：：：
+
+正确答案：错	
+
+√
+
+×
+
+9、CREATE INDEX 语句用于在 MySQL 中创建表：：：：
+
+正确答案：错	
+
+√
+
+×
+
+10、API只能返回xml数据：：：：
+
+正确答案：错	
+
+√
+
+×
+
+单选题：
+
+1、关于php的面向对象说法正确的是哪个（）：
+
+  正确答案：B
+
+A  一个父类只能有一个子类
+
+B  子类通过extends关键字继承父类
+
+C  一个子类可以有多个父类
+
+D  子类能够继承父类的所有的属性和方法（包括受保护和私有的）
+
+2、下列返回前一天的时间戳的函数是：
+
+  正确答案：A
+
+A  strtotime("-1 days")
+
+B  strtotime("last Sunday");
+
+C  strtotime("next Monday")
+
+D  strtotime("-1 week")
+
+3、yii小物件中form结束的标签是：
+
+  正确答案：C
+
+A  $this->beginWidget('CActiveForm')
+
+B  $this->begin('CActiveForm')
+
+C  $this->endWidget('CActiveForm')
+
+D  $this->end('CActiveForm')
+
+4、yii小物件form开始标签是：
+
+  正确答案：C
+
+A  $this->end('CActiveForm')
+
+B  $this->endWidget('CActiveForm')
+
+C  $this->beginWidget('CActiveForm')
+
+D  $this->begin('CActiveForm')
+
+5、在php中打印前一天的日期：
+
+  正确答案：A
+
+A  date("Y-m-d",time()-60*60*24)
+
+B  以上都是错误的
+
+C  date("Y-m-d")
+
+D  time()
+
+6、yii小物件中生成一个重置按钮：
+
+  正确答案：B
+
+A  Button()
+
+B  resetButton()
+
+C  submit()
+
+D  reset()
+
+7、yii小物件中哪个是生成一个单选按钮：
+
+  正确答案：A
+
+A  activeRadioButton()
+
+B  activeRadio()
+
+C  activeCheckBox()
+
+D  activeRadioButtonList()
+
+8、yii小物件中哪个是生成一个单选按钮列表：
+
+  正确答案：B
+
+A  activeRadio()
+
+B  activeRadioButtonList()
+
+C  activeRadioButton()
+
+D  activeCheckBox()
+
+9、yii小物件生成一个可以用POST方法提交当前表单的按钮：
+
+  正确答案：B
+
+A  ajaxButton()
+
+B  ajaxSubmitButton()
+
+C  ajax()
+
+D  ajaxPost()
+
+10、yii小物件中哪个是生成一个复选框列表：
+
+  正确答案：A
+
+A  activeCheckBoxList()
+
+B  activeRadio()
+
+C  checkbox()
+
+D  activeCheckBox()
+
+11、yii小物件生成一个模型属性的输入名称：
+
+  正确答案：A
+
+A  resolveName()
+
+B  Name()
+
+C  resolveId()
+
+D  resolveNameId()
+
+12、yii小物件中生成一个下拉列表是哪个：
+
+  正确答案：D
+
+A  activeText
+
+B  activeSelect()
+
+C  activeOption
+
+D  activeDropDownlist()
+
+13、yii小物件生成复选框的是：
+
+  正确答案：C
+
+A  activeCheckBoxList()
+
+B  checkbox()
+
+C  activeCheckBox()
+
+D  activeRadio()
+
+14、yii小物件生成一个图片提交按钮：
+
+  正确答案：C
+
+A  img()
+
+B  imgButton()
+
+C  imageButton()
+
+D  image()
+
+15、yii小物件中为模型属性生成一个隐藏域的是：
+
+  正确答案：D
+
+A  activehide()
+
+B  activeField()
+
+C  activeHidden()
+
+D  activeHiddenField()
+多选题：
+
+1、关于类中的成员的修饰符，下列说法正确的是：
+						 
+
+正确答案：A ; B ; D
+
+A protected修饰为受保护的，可以在类内，子类中访问
+
+B public修饰为公共的，可以在类外、类内、子类中访问
+
+C publish修饰为公共的，可以在类外、类内、子类中访问
+
+D private修饰为私有的，只能在本类中访问
+
+2、删除多个会员发布的文章内容,不成功的是：
+						 
+
+正确答案：B ; C ; D
+
+A delete from article where uid in($uid1,$uid2,$uid3)
+
+B delete * from article where uid =($uid1,$uid2,$uid3)
+
+C delete from article where uid =($uid1,$uid2,$uid3,)
+
+D delete * from article where uid in($uid1,$uid2,$uid3)
+
+3、以下关键字能够修饰类的是：
+						 
+
+正确答案：B ; D
+
+A Private
+
+B abstract
+
+C public
+
+D Final
+
+4、对于对类的封装，下列描述正确的是：
+						 
+
+正确答案：A ; C ; D
+
+A 基类中可以定义一些在子类中必须实现的方法
+
+B 一个子类只能实现一个接口类，即只能继承一个接口
+
+C 事物的共有属性应该尽可能的封装在基类中，通过继承获取
+
+D 基类可以抽象方法，而在子类中具体实现，子类不实现就不能实例化对象
+
+5、yii小物件中密码框是哪个：
+						 
+
+正确答案：B ; G
+
+A CActive
+
+B $form->passwordField
+
+C CActiveForms
+
+D $form->textField
+
+E CActiveF
+
+F $form->text
+
+G CActiveForm
+
+H $form->field
+判断题：
+
+1、MVC设计思想:就是将代码进行分隔成模型、视图、控制器：：
+
+正确答案：对	
+
+√
+
+×
+
+2、面向对象的三大特性为封装性、继承性、接口：：
+
+正确答案：错	
+
+√
+
+×
+
+3、默认的情况下禁用cookie那么session就不能用了：：
+
+正确答案：对	
+
+√
+
+×
+
+4、我们可以用order  by 字段名 desc  进行倒序排列：：
+
+正确答案：对	
+
+√
+
+×
+
+5、show databases 语句用于在 MySQL 中创建数据库：：：
+
+正确答案：错	
+
+√
+
+×
+
+6、passwordField() 生成一个密码输入框：：
+
+正确答案：对	
+
+√
+
+×
+
+7、activeId() 为模型属性生成一个输入栏的ID。 ：：
+
+正确答案：对	
+
+√
+
+×
+
+8、ajaxLink() 生成一个可以发起AJAX请求的链接：：
+
+正确答案：对	
+
+√
+
+×
+
+9、submitButton() 生成一个提交按钮：：
+
+正确答案：对	
+
+√
+
+×
+
+10、activeLabel() 为模型属性生成一个label标签：：
+
+正确答案：对	
+
+√
+
+×
+
+单选题：
+
+1、关于数组，下列说法错误的是：
+
+  正确答案：A
+
+A  php数组中的元素不可以是数组
+
+B  在php中一个数组中可以可以包含不同类型的数，如数字，或字符串
+
+C  在mysql中除了使用sql语句，还可以通过一些工具来实现创建数据表
+
+D  一个数组$a=array（1,2,3），执行unset($a[1])可以删除值为2的数组元素
+
+2、下列返回前一天的时间戳的函数是：
+
+  正确答案：D
+
+A  strtotime("last Sunday");
+
+B  strtotime("-1 week")
+
+C  strtotime("next Monday")
+
+D  strtotime("-1 days")
+
+3、在php中打印前一天的日期：
+
+  正确答案：B
+
+A  date("Y-m-d")
+
+B  date("Y-m-d",time()-60*60*24)
+
+C  time()
+
+D  以上都是错误的
+
+4、yii小物件中form结束的标签是：
+
+  正确答案：A
+
+A  $this->endWidget('CActiveForm')
+
+B  $this->beginWidget('CActiveForm')
+
+C  $this->end('CActiveForm')
+
+D  $this->begin('CActiveForm')
+
+5、yii小物件中为模型属性生成一个隐藏域的是：
+
+  正确答案：D
+
+A  activeHidden()
+
+B  activehide()
+
+C  activeField()
+
+D  activeHiddenField()
+
+6、yii小物件生成复选框的是：
+
+  正确答案：B
+
+A  checkbox()
+
+B  activeCheckBox()
+
+C  activeRadio()
+
+D  activeCheckBoxList()
+
+7、yii小物件中生成一个重置按钮：
+
+  正确答案：B
+
+A  submit()
+
+B  resetButton()
+
+C  reset()
+
+D  Button()
+
+8、yii小物件中哪个是生成一个单选按钮：
+
+  正确答案：D
+
+A  activeRadio()
+
+B  activeRadioButtonList()
+
+C  activeCheckBox()
+
+D  activeRadioButton()
+
+9、yii小物件生成一个可以用POST方法提交当前表单的按钮：
+
+  正确答案：D
+
+A  ajaxButton()
+
+B  ajaxPost()
+
+C  ajax()
+
+D  ajaxSubmitButton()
+
+10、yii小物件中哪个是生成第一个有效错误：
+
+  正确答案：C
+
+A  addErrorCss()
+
+B  errorSummary()
+
+C  error()
+
+D  activerror()
+
+11、yii小物件生成HTML按钮的是：
+
+  正确答案：B
+
+A  activehtmlButton()
+
+B  htmlButton()
+
+C  html()
+
+D  activehtml()
+
+12、YII小物件生成一个列表选项的是：
+
+  正确答案：B
+
+A  listOptions()
+
+B  listOption()
+
+C  listBox()
+
+D  listData()
+
+13、yii小物件中生成一个表单开始标签的是：
+
+  正确答案：C
+
+A  activeendForm()
+
+B  activeform()
+
+C  form()
+
+D  endForm()
+
+14、生成一个link标签，可以插入到HTML页面的头部部分的是：
+
+  正确答案：D
+
+A  linkButton()
+
+B  linkBox()
+
+C  link()
+
+D  linkTag()
+
+15、yii小物件中哪个是生成一个列表框：
+
+  正确答案：A
+
+A  listBox()
+
+B  activelistBox()
+
+C  activeCheckBoxList()
+
+D  activelist()
+
+16、根据名称来生成一个有效的HTML ID：
+
+  正确答案：C
+
+A  resolveNameId()
+
+B  getNameId()
+
+C  getIdByName()
+
+D  resolveIdByName()
+
+17、yii小物件中生成列表框是哪个：
+
+  正确答案：A
+
+A  listButton()
+
+B  activeCheckBoxList()
+
+C  activeRadioButtonList()
+
+D  activelistButton()
+
+18、yii小物件生成一个文本框：
+
+  正确答案：C
+
+A  filefield()
+
+B  textfield()
+
+C  textArea()
+
+D  tag()
+
+19、yii小物件中哪个是生成HTML元素的结束标记：
+
+  正确答案：B
+
+A  activecloseTag()
+
+B  closeTag()
+
+C  closeHtml()
+
+D  activecloseHtml()
+多选题：
+
+1、yii小物件中密码框是哪个：
+						 
+
+正确答案：A ; G
+
+A CActiveForm
+
+B CActiveF
+
+C $form->field
+
+D $form->text
+
+E CActiveForms
+
+F CActive
+
+G $form->passwordField
+
+H $form->textField
+判断题：
+
+1、我们可以用order  by 字段名 desc  进行倒序排列：：
+
+正确答案：对	
+
+√
+
+×
+
+2、默认的情况下禁用cookie那么session就不能用了：：
+
+正确答案：对	
+
+√
+
+×
+
+3、passwordField() 生成一个密码输入框：：
+
+正确答案：对	
+
+√
+
+×
+
+4、submitButton() 生成一个提交按钮：：
+
+正确答案：对	
+
+√
+
+×
+
+5、ajaxLink() 生成一个可以发起AJAX请求的链接：：
+
+正确答案：对	
+
+√
+
+×
+
+6、textField() 生成一个文本框：：
+
+正确答案：错	
+
+√
+
+×
+
+7、resolveName()生成一个模型属性名称：：
+
+正确答案：对	
+
+√
+
+×
+
+8、activeInputField()为一个模型属性生成一个输入标签：：
+
+正确答案：对	
+
+√
+
+×
+
+9、statefulForm() 生成一个有状态的表单标签。：：
+
+正确答案：对	
+
+√
+
+×
+
+10、encode() 把特殊的字符编码为HTML实体。：：
+
+正确答案：对	
+
+√
+
+×
+
+
+
+
+
+
+
+
+
+
+http://detail.tmall.com/item.htm?spm=a230r.1.14.15.ppylqe&id=38506686865&cm_id=140105335569ed55e27b&abbucket=7&skuId=94824800164
+
+
+
+
+
+':B:6f407bab:6df8541aa1b87a6ca5178a334f3823bf'

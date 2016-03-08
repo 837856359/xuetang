@@ -1,0 +1,145 @@
+<include file="Public/html/xtang_header.html" />
+<link rel="icon" type="image/x-icon" href="__PUBLIC__/static/images/favicon.e0c76d09021e.ico">
+
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/reset.css">
+	
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/media.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bbs.css">
+
+
+<body>
+<div class="forum_collect">
+<div class="forum_whole">
+    <div class="wrap cf">
+        <div class="left fl">
+            <div class="post_header">
+                <h1>全部帖子</h1>
+                <!--是否登录-->
+                <a href="__APP__/index.php/Home/Community/post" class="post_btn fr">
+                    <em>我要发帖</em>
+                </a>
+            </div>
+            <nav class="container-fluid" id="post_navibar">
+                <ul class="row" id="entrance">
+
+                        
+
+                            <li class="col-sm-2 current"><a class="entrance_activity" href="__APP__/index.php/Home/Community/activity?id=1">活动
+                            </a>
+                            </li>
+
+
+                        
+                            <li class="col-sm-3 current"><a class="entrance_course" href="__APP__/index.php/Home/Community/activity?id=2">学习分享</a>
+                            </li>
+
+
+                        
+
+                            <li class="col-sm-2 current"><a class="entrance_news" 
+							href="__APP__/index.php/Home/Community/activity?id=3">资讯</a>
+                            </li>
+
+
+                        
+
+                            <li class="col-sm-2 current"><a class="entrance_gossip" href="__APP__/index.php/Home/Community/activity?id=4">灌水</a>
+                            </li>
+
+
+                </ul>
+            </nav>
+
+            <div class="post_body">
+                  
+				  <foreach name="arr" item="vo" >
+                    <div class="pother post_body_classifyactivity">
+                        <div class="pb_position b classifyactivity">
+                            <a class="ptitle" href="__APP__/index.php/Home/Community/post_details/id/{$vo.post_id}">
+                                <p>{$vo.post_title}</p>
+                            </a>
+
+                           <!--  <div class="pcontentwrap">
+                                <p class="pcontent">{$vo.post_content}</p>
+                            </div> -->
+
+                            <div class="pref cf">
+                              
+                                <div class="pinfo fr">
+                                    <p class="author">{$vo.user_name}</p>
+
+                                    <p class="last_send_time">
+									<php>
+										echo date('Y-m-d H:i:s',$vo[post_addtime]);
+									</php>
+									</p>
+
+                                    <!-- <p class="popular">
+                                        <php>echo rand(3,52);</php>
+                                    </p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </foreach>
+
+                    <!--<div class="pageDirection cf">
+                             
+                             <a class="prePagebtn fl end"><span></span></a>
+                            <a class="nextPagebtn fl" href="{:U('Community/activity?page=2')}"><span></span></a> 
+                    </div>-->
+                    <div>
+                               
+        <a href="__APP__/index.php/Home/Community/activity/id/{$id}/page/1">首页</a>&nbsp;
+        <a href='__APP__/index.php/Home/Community/activity/id/{$id}/page/{$paa}'>上一页</a>&nbsp;
+        <a href='__APP__/index.php/Home/Community/activity/id/{$id}/page/{$pss}'>下一页</a>&nbsp;
+        <a href='__APP__/index.php/Home/Community/activity/id/{$id}/page/{$page_num}'>尾页</a>
+                    </div>
+            </div>
+        </div>
+
+        <div class="right fl">           
+    <div class="bulletin">
+
+        <div class="bulletin_board_tag">
+            <h2>学堂公告</h2>
+        </div>
+        <div class="bulletin_board">
+            <div class="hello">
+            <span class="purple_stick"></span>
+            <h3>大家好 \(0^o^0)/ !!!</h3>
+            </div>
+
+
+            <div class="bbc_wrap">
+                <p class="bulletin_board_content">欢迎来到学堂在线广场！
+                            <br>
+                            交学友，看资讯，晒笔记...
+                            <br>
+                            在广场：喧闹不可怕，沉默才可怕
+                            <br>
+                            在广场：沉淀优质内容，分享酸甜苦辣
+                            <br>
+                            现在开始吧，You are what you MOOC！
+                          
+                            </p>
+                        </div>
+
+                        <div class="bulletin_board_time fr">
+                            <p><php>
+						echo date('Y-m-d');
+							</php></p>
+                        </div>
+                    </div>
+    </div>
+            </div>
+        </div>
+        </section>
+    </div>
+
+</div>
+
+	<include file="Public/html/footer.html" />
+    
+	</body>
+</html>

@@ -1,0 +1,198 @@
+<include file="Public/html/xtang_header.html" />
+<div id="carousel" style="">
+    <ul class="carousel_wrap">
+
+ <li class="carousel_item" data-bg-width="1920" data-bg-color="#6e00c2" data-img="__PUBLIC__/js/mini_banner1.jpg">
+ <a href="#" title="" target="_blank"><img src="__PUBLIC__/js/banner(4).png"></a></li>
+
+<li class="carousel_item" data-bg-width="" data-bg-color="" data-bg="red" data-img="__PUBLIC__/js/tu2.png">
+<a href="#" title="" target="_blank"><img src="__PUBLIC__/js/banner.png"></a></li>
+
+<li class="carousel_item" data-bg-width="" data-bg-color="" data-bg="#bca002" data-img="__PUBLIC__/js/bj3.jpg">
+<a href="#" title="" target="_blank"><img src="__PUBLIC__/js/banner.jpg"></a></li>
+
+<li class="carousel_item" data-bg-width="" data-bg-color="" data-bg="#0064c2" data-img="__PUBLIC__/js/bj4.jpg">
+<a href="#" title="" target="_blank"><img src="__PUBLIC__/js/banner(2).png"></a></li>
+
+<li class="carousel_item" data-bg-width="1920" data-bg-color="#269fd7" data-bg="__PUBLIC__/js/bjda2.png" data-img="__PUBLIC__/js/tup5.png">
+<a href="#" title="" target="_blank"><img src="__PUBLIC__/js/banner(3).png"></a></li>
+
+<li class="carousel_item" data-bg-width="" data-bg-color="" data-bg="#003f56" data-img="__PUBLIC__/js/tup6.jpg">
+<a href="#" title="" target="_blank"><img src="__PUBLIC__/js/banner(1).png"></a></li>
+
+<li class="carousel_item" data-bg-width="" data-bg-color="" data-bg="#8eb3ff" data-img="__PUBLIC__/js/top8.png">
+<a href="#" title="" target="_blank"><img src="__PUBLIC__/js/banner(5).png"></a></li>
+
+<li class="carousel_item" data-bg-width="" data-bg-color="" data-bg="#8eb3ff" data-img="__PUBLIC__/js/top8.png">
+<a href="#" title="" target="_blank"><img src="__PUBLIC__/js/banner(8).png"></a></li>
+
+<li class="carousel_item" data-bg-width="" data-bg-color="" data-bg="#8eb3ff" data-img="__PUBLIC__/js/top8.png">
+<a href="#" title="" target="_blank"><img src="__PUBLIC__/js/banner(9).png"></a></li>
+
+    </ul>
+</div>
+<div class="bg_hui pb_50">
+	<section class="wrap index_title">
+		<h2></h2>
+		<p>免费学习最好的课程！选择感兴趣的领域，加入课堂，开始学习吧！</p>
+	</section>
+
+	<section class="wrap index_kc_list" id="index_kc_list">
+		<ul class="cf">
+		<volist name="college" id="vo">
+         <li class="cloud">
+				<div class="title">
+					<a class="title_a" href="__APP__/index.php/Home/Courses/chuizhi_search/c_id/{$vo.c_id}" title="" target="_blank"><i><img src="__PUBLIC__/img/list_files/{$vo.img}" title="{$vo.c_name}"></i><p>{$vo.c_name}</p></a>
+				</div>
+				<ol>
+		       <volist name="vo.course_arr" id="v">
+					<li class="first">
+						<strong>{$v.stage_name}</strong>
+								<a href="__APP__/index.php/Home/Detail/detail_list/cid/{$v.cid}" title="" target="_blank" data-img_src="{$v.cimg}" data-name="{$v.cname}" data-txt="{$vo.c_name}">{$v.cname}</a>
+							    <a href="__APP__/index.php/Home/Courses/sel_list/c_id/{$vo.c_id}/s_id/{$v.sid}/type/3"  title="" target="_blank" data-img_src="{$v.t_img}" data-name="其他" data-txt="{$v.job} {$v.name}">其他</a>
+	
+					</li>
+				</volist> 
+					</ol>
+				<p><a href="__APP__/index.php/Home/Courses/chuizhi_search/c_id/{$vo.c_id}" title="" target="_blank">{$vo.course_num}门课程<i></i></a></p>
+				</volist>   
+			</li>		
+			<li class="more">
+				<div class="title">
+					<a class="title_a" href="__APP__/index.php/Home/Courses/partners" title="" target="_blank"><i><img src="__PUBLIC__/js/index_more.c9176721cb81.png" alt="更多选择" title="更多选择"></i><p>更多学院</p></a>
+				</div>
+				<div class="list">
+					<volist name="more_college" id="m_c">
+					<a href="__APP__/index.php/Home/Courses/chuizhi_search/c_id/{$m_c.c_id}" title="" target="_blank">{$m_c.c_name}</a>
+					</volist>
+
+					<!--只能显示三条，多了页面元素挤了。<a href="__APP__/index.php/Home/Courses/sel_list/c_id/1" title="" target="_blank">html5基础</a>
+					<a href="__APP__/index.php/Home/Courses/sel_list/c_id/1" title="" target="_blank">Android UI开发</a>
+					<a href="__APP__/index.php/Home/Courses/sel_list/c_id/1" title="" target="_blank">建筑材料与构造</a>-->
+				</div>
+				<p><a href="__APP__/index.php/Home/Courses/index" title="" target="_blank">全部课程<i></i></a></p>
+			</li>
+        </ul>
+	</section>
+</div>
+
+<div class="new-courses wrap" id="new-courses">
+	<h2>
+		<div class="fl"><span>最热课程</span>/ 每周持续更新...</div>
+		<ol class="fr cf"><li class="on">最热课程</li>
+		</ol>
+	</h2>
+	<div class="scroll_courses_wrap">
+		<div class="scroll_courses cf">
+<ul class="cf">	
+ <!-- cname,sid,intro,cimg,people,addtime,video,college.c_id,c_name from course inner join college on course.c_id=college.c_id order by people desc limit 8 -->
+<foreach name="kec" item="vk" >
+<li>
+	<a href="__APP__/index.php/Home/Courses/sel_list/c_id/{$vk.cid}/type/2" title="" target="_blank">
+		<div class="normal">
+			<img src="{$vk.cimg}" alt="" title="">
+			<h3>课程:{$vk.cname}</h3>
+			<p><span>{$vk.c_name}</span>
+				<span>{$vk.people}听课</span></p>
+		</div>
+		<div class="staff">
+			<div class="cf">
+			
+				<img class="fl" src="{$vk.cimg}" alt="" title="">
+				<div class="js_content fl">
+					<h4>最热课程:{$vk.cname}</h4>
+					<p> 源自:{$vk.c_name}</p>
+				</div>
+			</div>
+			<p class="txt">课程简介:<br>
+			<textarea name="" rows="25" cols="35" disabled content>{$vk.intro}</textarea>
+			</p>
+			<p class="title"><span></span></p>
+		</div>
+	</a>
+</li>
+</foreach>		
+</ul>
+		</div>
+	</div>
+	<p><a href="__APP__/index.php/Home/Courses/index" title="">显示全部课程（{$num})</a></p>
+</div>
+
+<section class="wrap start_learning">
+	<h2><img src="__PUBLIC__/js/tup33.png" alt="喝一杯茶，学个新知识点，很简单！" title="喝一杯茶，学个新知识点，很简单！"></h2>
+	<a href="__APP__/index.php/Home/Courses/index" title="">开始学习<i></i></a>
+</section>
+<footer>
+    <div class="wrap">
+        <ul class="cf">
+            <li>
+                <div class="title">
+                    <a href="#" target="_blank">
+                        <p class="first">关于我们</p>
+                        <p class="second gy">ABOUT US</p>
+                    </a>
+                </div>
+                <p><a href="#" title="">团队介绍</a></p>
+                <p><a href="#" title="">联系我们</a></p>
+                <p><a href="#" title="" target="_blank">招聘信息</a></p>
+                <p><a href="#" title="" target="_blank">常见问题</a></p>
+            </li>
+            <li>
+                <div class="title">
+                    <a href="#" target="_blank">
+                        <p class="first">发现课程</p>
+                        <p class="second fx">ABOUT US</p>
+                    </a>
+                </div>
+                <p><a href="#" title="">云计算</a></p>
+                <p><a href="#" title="">数据科学</a></p>
+                <p><a href="#" title="">创业管理</a></p>
+                <p><a href="#" title="">更多</a></p>
+            </li>
+            <li>
+                <div class="title">
+                    <a href="#" target="_blank">
+                        <p class="first">加入我们</p>
+                        <p class="second jr">ABOUT US</p>
+                    </a>
+                </div>
+                <p><a href="#" title="" target="_blank">产品运营</a></p>
+                <p><a href="#" title="" target="_blank">资深运维攻城狮</a></p>
+                <p><a href="#" title="" target="_blank">iOS开发攻城狮</a></p>
+                <p><a href="#" title="" target="_blank">更多</a></p>
+            </li>
+			 <li>
+                <div class="title">
+                    <a href="#" target="_blank">
+                        <p class="first">加入我们</p>
+                        <p class="second jr">ABOUT US</p>
+                    </a>
+                </div>
+                <p><a href="#" title="" target="_blank">产品运营</a></p>
+                <p><a href="#" title="" target="_blank">资深运维攻城狮</a></p>
+                <p><a href="#" title="" target="_blank">iOS开发攻城狮</a></p>
+                <p><a href="#" title="" target="_blank">更多</a></p>
+            </li>
+        </ul>
+    </div>
+    <div class="copyright">
+        <div class="text fl">
+            <p>BieJingBW  2014-2015 北京BW1402phpA</p>
+            <p><a href="#" title="京ICP备14019655号" target="_blank">京ICP备80080556号</a></p>
+        </div>
+        <div class="edx_logo cf fr">
+            <a href="#" target="_blank"><img src="__PUBLIC__/js/edx_logo.262fca70a49b.png"></a>
+        </div>
+    </div>
+</footer>
+
+	
+<script src="__PUBLIC__/js/hm.js" async="" defer=""></script><script id="requirejs" src="__PUBLIC__/js/require.2d213b58c463.js"></script>
+    <script src="__PUBLIC__/js/appCommon.1c7c3f1b8788.js"></script>
+    <script src="__PUBLIC__/js/xuetanganalyse.18e1a992eb60.js"></script>
+	 <script src="__PUBLIC__/js/homepage.ccc1fe02269a.js"></script> 
+
+    
+
+
+</body></html>
